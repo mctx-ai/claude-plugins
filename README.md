@@ -19,7 +19,7 @@ Add the mctx marketplace to Claude Code, then install any AI App in seconds.
 **Step 1 — Add the marketplace**
 
 ```
-/plugin marketplace add https://api.mctx.ai/marketplace.json
+/plugin marketplace add https://mctx.ai/marketplace.json
 ```
 
 **Step 2 — Install an AI App**
