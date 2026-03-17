@@ -6,7 +6,7 @@
 
 **The official mctx plugin marketplace for Claude Code**
 
-[Browse AI Apps](https://mctx.ai) · [Documentation](https://docs.mctx.ai)
+[Documentation](https://docs.mctx.ai)
 
 </div>
 
@@ -28,7 +28,7 @@ Add the mctx marketplace to Claude Code, then install any AI App in seconds.
 /plugin install {slug}@mctx
 ```
 
-Replace `{slug}` with the name of the AI App you want to use. You can find every available app at [mctx.ai](https://mctx.ai).
+Replace `{slug}` with the name of the AI App you want to use.
 
 ---
 
@@ -44,7 +44,7 @@ When you install an mctx AI App:
 
 ## Browse available AI Apps
 
-Visit **[mctx.ai](https://mctx.ai)** to explore the growing library of AI Apps. Subscribe to the ones you want, then come back here to install them in Claude Code.
+Visit **[mctx.ai](https://mctx.ai)** to learn more about the platform and subscribe to AI Apps.
 
 Need help? The [docs](https://docs.mctx.ai) cover everything from installation to managing your subscriptions.
 
