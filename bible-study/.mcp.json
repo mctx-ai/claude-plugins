@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "bible-study": {
+      "type": "http",
+      "url": "https://bible-study.mctx.ai"
+    }
+  }
+}
