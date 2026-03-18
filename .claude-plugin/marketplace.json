@@ -3,5 +3,11 @@
   "owner": {
     "name": "mctx"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "help",
+      "source": "./help",
+      "version": "1.0.23"
+    }
+  ]
 }
