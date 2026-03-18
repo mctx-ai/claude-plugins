@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "example-mcp-server": {
+      "type": "http",
+      "url": "https://example-mcp-server.mctx.ai"
+    }
+  }
+}

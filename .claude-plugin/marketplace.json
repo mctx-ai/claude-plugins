@@ -5,6 +5,12 @@
   },
   "plugins": [
     {
+      "name": "example-mcp-server",
+      "source": "./example-mcp-server",
+      "description": "Build complete MCP servers with our framework — study or fork this reference implementation. Covers all @mctx-ai/mcp-server patterns: tool types (sync string, object return, generators, LLM sampling), resource URIs (static, dynamic templates), prompt formats (single-message, multi-message), tool annotations (readOnly, destructive, openWorld, idempotent), structured logging, environment variables, and test coverage. The whoami tool demonstrates user identity via ctx.userId. Includes setup.sh for quick template generation.",
+      "version": "1.2.8"
+    },
+    {
       "name": "help",
       "source": "./help",
       "version": "1.0.23"
