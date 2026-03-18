@@ -1,0 +1,14 @@
+{
+  "name": "todos",
+  "version": "2.0.1",
+  "description": "Personal todo list that persists across sessions and MCP clients. Create, update, complete, reorder, and delete todos. Todos are private to your mctx account. Call status first in every new session to see what's pending.",
+  "author": {
+    "name": "mctx-ai"
+  },
+  "homepage": "https://todos.mctx.ai",
+  "repository": "https://github.com/mctx-ai/claude-plugins",
+  "keywords": [
+    "mctx",
+    "mcp"
+  ]
+}
