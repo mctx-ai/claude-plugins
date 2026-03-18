@@ -8,6 +8,11 @@
       "name": "help",
       "source": "./help",
       "version": "1.0.23"
+    },
+    {
+      "name": "notes",
+      "source": "./notes",
+      "version": "1.4.1"
     }
   ]
 }
