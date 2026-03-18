@@ -1,6 +1,6 @@
 ---
 name: about-todo
-description: "An MCP server that extends AI assistants with additional tools and capabilities."
+description: "Personal todo list that persists across sessions and MCP clients. Create, update, complete, reorder, and delete todos. Todos are private to your mctx account. Call status first in every new session to see what's pending."
 ---
 
 # Todo
@@ -11,7 +11,7 @@ description: "An MCP server that extends AI assistants with additional tools and
 
 ## What This Server Does
 
-An MCP server that extends AI assistants with additional tools and capabilities.
+Personal todo list that persists across sessions and MCP clients. Create, update, complete, reorder, and delete todos. Todos are private to your mctx account. Call status first in every new session to see what's pending.
 
 ## Available Tools
 
