@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "help": {
-      "type": "http",
-      "url": "https://help.mctx.ai"
-    }
-  }
-}
