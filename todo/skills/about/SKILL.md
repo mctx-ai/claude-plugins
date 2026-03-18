@@ -5,7 +5,7 @@ description: "Personal todo list that persists across sessions and MCP clients. 
 
 # Todo
 
-**Version:** 2.0.2
+**Version:** 2.0.3
 **Author:** mctx-ai
 **Homepage:** <https://mctx.ai>
 
@@ -33,7 +33,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://todo.mctx.ai/v2.0.2`
+**Latest version endpoint:** `https://todo.mctx.ai/v2.0.3`
 
 ## How to Install
 

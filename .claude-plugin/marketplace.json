@@ -7,13 +7,13 @@
     {
       "name": "bible-study",
       "source": "./bible-study",
-      "description": "Study the Bible in its original languages, trace themes across both testaments, and compare five translations ÃÂ¢ÃÂÃÂ all in one conversation. Ask any question about what Scripture says and get grounded, cited answers: What does the Bible say about suffering? Topical search surfaces Job as the Bible's principal witness on suffering, Psalms on lament, Romans on justification ÃÂ¢ÃÂÃÂ whole books and narratives alongside individual verses. What is the Hebrew word behind lovingkindness in Psalm 23? Compare how KJV and WEB translate John 3:16. Trace the word grace through Paul's letters. Covers 155,510 verses across KJV, WEB, ASV, YLT, and Darby with 606,140 cross-references, 17,543 Strong's entries, BDB and Thayer lexicon definitions, and Nave's 5,319 topical categories.",
+      "description": "Study the Bible in its original languages, trace themes across both testaments, and compare five translations ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ all in one conversation. Ask any question about what Scripture says and get grounded, cited answers: What does the Bible say about suffering? Topical search surfaces Job as the Bible's principal witness on suffering, Psalms on lament, Romans on justification ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ whole books and narratives alongside individual verses. What is the Hebrew word behind lovingkindness in Psalm 23? Compare how KJV and WEB translate John 3:16. Trace the word grace through Paul's letters. Covers 155,510 verses across KJV, WEB, ASV, YLT, and Darby with 606,140 cross-references, 17,543 Strong's entries, BDB and Thayer lexicon definitions, and Nave's 5,319 topical categories.",
       "version": "1.6.6"
     },
     {
       "name": "example-mcp-server",
       "source": "./example-mcp-server",
-      "description": "Build complete MCP servers with our framework ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ study or fork this reference implementation. Covers all @mctx-ai/mcp-server patterns: tool types (sync string, object return, generators, LLM sampling), resource URIs (static, dynamic templates), prompt formats (single-message, multi-message), tool annotations (readOnly, destructive, openWorld, idempotent), structured logging, environment variables, and test coverage. The whoami tool demonstrates user identity via ctx.userId. Includes setup.sh for quick template generation.",
+      "description": "Build complete MCP servers with our framework ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ study or fork this reference implementation. Covers all @mctx-ai/mcp-server patterns: tool types (sync string, object return, generators, LLM sampling), resource URIs (static, dynamic templates), prompt formats (single-message, multi-message), tool annotations (readOnly, destructive, openWorld, idempotent), structured logging, environment variables, and test coverage. The whoami tool demonstrates user identity via ctx.userId. Includes setup.sh for quick template generation.",
       "version": "1.2.8"
     },
     {
@@ -25,14 +25,14 @@
     {
       "name": "notes",
       "source": "./notes",
-      "description": "One centralized note store across every AI client â Claude, ChatGPT, Cursor, Codex, Windsurf. Save a note in Claude Code, read it in Cursor. Save on your phone, pick it up on your desktop. Say 'catch me up on what we were working on' and your AI surfaces your plans, decisions, and findings from any previous session in any client. Say 'save this decision before I close the tab' and it's immediately available everywhere. Say 'I'm switching to Cursor â save where we are so I can pick it up there' and your next AI session has full context. Notes are encrypted at rest with a per-user AES-256-GCM key. Deleted notes stay recoverable for 30 days. Tag notes to categorize them â say 'save this and tag it auth' â then filter by tag later: 'show me all my auth notes.' Add, remove, or replace tags on any existing note without rewriting it. Your mctx account is your notes identity â one account, instant access from any AI tool.",
+      "description": "One centralized note store across every AI client Ã¢ÂÂ Claude, ChatGPT, Cursor, Codex, Windsurf. Save a note in Claude Code, read it in Cursor. Save on your phone, pick it up on your desktop. Say 'catch me up on what we were working on' and your AI surfaces your plans, decisions, and findings from any previous session in any client. Say 'save this decision before I close the tab' and it's immediately available everywhere. Say 'I'm switching to Cursor Ã¢ÂÂ save where we are so I can pick it up there' and your next AI session has full context. Notes are encrypted at rest with a per-user AES-256-GCM key. Deleted notes stay recoverable for 30 days. Tag notes to categorize them Ã¢ÂÂ say 'save this and tag it auth' Ã¢ÂÂ then filter by tag later: 'show me all my auth notes.' Add, remove, or replace tags on any existing note without rewriting it. Your mctx account is your notes identity Ã¢ÂÂ one account, instant access from any AI tool.",
       "version": "1.4.2"
     },
     {
       "name": "todo",
       "source": "./todo",
       "description": "Personal todo list that persists across sessions and MCP clients. Create, update, complete, reorder, and delete todos. Todos are private to your mctx account. Call status first in every new session to see what's pending.",
-      "version": "2.0.2"
+      "version": "2.0.3"
     },
     {
       "name": "todos",
