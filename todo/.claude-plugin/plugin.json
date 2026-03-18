@@ -1,0 +1,14 @@
+{
+  "name": "todo",
+  "version": "2.0.2",
+  "description": "An MCP server that extends AI assistants with additional tools and capabilities.",
+  "author": {
+    "name": "mctx-ai"
+  },
+  "homepage": "https://todo.mctx.ai",
+  "repository": "https://github.com/mctx-ai/claude-plugins",
+  "keywords": [
+    "mctx",
+    "mcp"
+  ]
+}

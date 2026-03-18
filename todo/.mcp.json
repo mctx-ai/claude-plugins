@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "todo": {
+      "type": "http",
+      "url": "https://todo.mctx.ai"
+    }
+  }
+}
