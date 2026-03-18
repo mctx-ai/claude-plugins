@@ -1,17 +1,17 @@
 ---
 name: about-help
-description: "An MCP server that extends AI assistants with additional tools and capabilities."
+description: "Get accurate answers about mctx and MCP servers from live docs, not outdated training data. Look up deployment steps, payouts, pricing, or framework questions instantly. Works with Claude Code, Cursor, Codex, and any MCP client. Coverage: server framework, deployment, environment variables, subscriptions, payouts, pricing, tools, resources, transports, authentication, versioning. Questions you can ask: \"How do I define a tool with input validation?\" \"What does mctx need in package.json?\" \"How do I set up payouts?\" \"What's the difference between ready and live status?\" \"How does the 80/20 split work?\" \"Why did my deployment fail?\" \"What MCP resources and tools are available?\""
 ---
 
 # Help
 
-**Version:** 1.0.23
+**Version:** 1.0.24
 **Author:** mctx-ai
 **Homepage:** <https://docs.mctx.ai>
 
 ## What This Server Does
 
-An MCP server that extends AI assistants with additional tools and capabilities.
+Get accurate answers about mctx and MCP servers from live docs, not outdated training data. Look up deployment steps, payouts, pricing, or framework questions instantly. Works with Claude Code, Cursor, Codex, and any MCP client. Coverage: server framework, deployment, environment variables, subscriptions, payouts, pricing, tools, resources, transports, authentication, versioning. Questions you can ask: "How do I define a tool with input validation?" "What does mctx need in package.json?" "How do I set up payouts?" "What's the difference between ready and live status?" "How does the 80/20 split work?" "Why did my deployment fail?" "What MCP resources and tools are available?"
 
 ## Available Tools
 
@@ -33,7 +33,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://help.mctx.ai/v1.0.23`
+**Latest version endpoint:** `https://help.mctx.ai/v1.0.24`
 
 ## How to Install
 
