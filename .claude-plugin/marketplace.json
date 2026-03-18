@@ -33,6 +33,12 @@
       "source": "./todo",
       "description": "Personal todo list that persists across sessions and MCP clients. Create, update, complete, reorder, and delete todos. Todos are private to your mctx account. Call status first in every new session to see what's pending.",
       "version": "2.0.3"
+    },
+    {
+      "name": "todos",
+      "source": "./todos",
+      "description": "Personal todo list that persists across sessions and MCP clients. Create, update, complete, reorder, and delete todos. Todos are private to your mctx account. Call status first in every new session to see what's pending.",
+      "version": "2.0.3"
     }
   ]
 }
