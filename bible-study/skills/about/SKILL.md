@@ -5,7 +5,7 @@ description: "Study the Bible in its original languages, trace themes across bot
 
 # Bible Study
 
-**Version:** 1.6.8
+**Version:** 1.7.0
 **Author:** mctx-ai
 **Source:** <https://github.com/mctx-ai/bible-mcp-server>
 **Homepage:** <https://github.com/mctx-ai/bible-mcp-server>
@@ -20,7 +20,7 @@ Tool information is not available for this server.
 
 ## How to Subscribe
 
-Subscribe to this MCP server at <https://mctx.ai/apps/bible-study>.
+Subscribe to this MCP server at <https://bible-study.mctx.ai>.
 
 This server is free to use.
 
@@ -34,7 +34,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://bible-study.mctx.ai/v1.6.8`
+**Latest version endpoint:** `https://bible-study.mctx.ai/v1.7.0`
 
 ## How to Install
 
@@ -195,9 +195,9 @@ You are preparing to preach or teach and need cross-references, lexical support,
 
 ## Troubleshooting
 
-- **Authentication failed** — Visit <https://mctx.ai/apps/bible-study> to subscribe or renew your subscription. OAuth re-authentication happens automatically on the next connection attempt.
+- **Authentication failed** — Visit <https://bible-study.mctx.ai> to subscribe or renew your subscription. OAuth re-authentication happens automatically on the next connection attempt.
 
-- **Expired subscription (403 Forbidden)** — Your subscription has expired or been cancelled. Renew at <https://mctx.ai/apps/bible-study>.
+- **Expired subscription (403 Forbidden)** — Your subscription has expired or been cancelled. Renew at <https://bible-study.mctx.ai>.
 
 - **Version not found (404 Not Found)** — The requested server version does not exist or has been retired. Connect to `https://bible-study.mctx.ai` without a version suffix to automatically use the latest version.
 
