@@ -5,7 +5,7 @@ description: "One centralized note store across every AI client — Claude, Chat
 
 # Notes
 
-**Version:** 1.4.2
+**Version:** 1.4.3
 **Author:** mctx-ai
 **Homepage:** <https://mctx.ai>
 
@@ -19,7 +19,7 @@ Tool information is not available for this server.
 
 ## How to Subscribe
 
-Subscribe to this MCP server at <https://mctx.ai/apps/notes>.
+Subscribe to this MCP server at <https://notes.mctx.ai>.
 
 This server costs $1.00 per 1,000 requests.
 
@@ -33,7 +33,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://notes.mctx.ai/v1.4.2`
+**Latest version endpoint:** `https://notes.mctx.ai/v1.4.3`
 
 ## How to Install
 
@@ -240,9 +240,9 @@ You're in a long debugging marathon with multiple issues to track. Every time yo
 
 ## Troubleshooting
 
-- **Authentication failed** — Visit <https://mctx.ai/apps/notes> to subscribe or renew your subscription. OAuth re-authentication happens automatically on the next connection attempt.
+- **Authentication failed** — Visit <https://notes.mctx.ai> to subscribe or renew your subscription. OAuth re-authentication happens automatically on the next connection attempt.
 
-- **Expired subscription (403 Forbidden)** — Your subscription has expired or been cancelled. Renew at <https://mctx.ai/apps/notes>.
+- **Expired subscription (403 Forbidden)** — Your subscription has expired or been cancelled. Renew at <https://notes.mctx.ai>.
 
 - **Version not found (404 Not Found)** — The requested server version does not exist or has been retired. Connect to `https://notes.mctx.ai` without a version suffix to automatically use the latest version.
 
