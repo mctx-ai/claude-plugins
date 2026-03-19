@@ -5,7 +5,7 @@ description: "Get accurate answers about mctx and MCP servers from live docs, no
 
 # Help
 
-**Version:** 1.0.24
+**Version:** 1.0.25
 **Author:** mctx-ai
 **Homepage:** <https://docs.mctx.ai>
 
@@ -19,7 +19,7 @@ Tool information is not available for this server.
 
 ## How to Subscribe
 
-Subscribe to this MCP server at <https://mctx.ai/apps/help>.
+Subscribe to this MCP server at <https://help.mctx.ai>.
 
 This server is free to use.
 
@@ -33,7 +33,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://help.mctx.ai/v1.0.24`
+**Latest version endpoint:** `https://help.mctx.ai/v1.0.25`
 
 ## How to Install
 
@@ -176,9 +176,9 @@ You've been building with Claude Code and switch to Cursor. Same subscription, s
 
 ## Troubleshooting
 
-- **Authentication failed** — Visit <https://mctx.ai/apps/help> to subscribe or renew your subscription. OAuth re-authentication happens automatically on the next connection attempt.
+- **Authentication failed** — Visit <https://help.mctx.ai> to subscribe or renew your subscription. OAuth re-authentication happens automatically on the next connection attempt.
 
-- **Expired subscription (403 Forbidden)** — Your subscription has expired or been cancelled. Renew at <https://mctx.ai/apps/help>.
+- **Expired subscription (403 Forbidden)** — Your subscription has expired or been cancelled. Renew at <https://help.mctx.ai>.
 
 - **Version not found (404 Not Found)** — The requested server version does not exist or has been retired. Connect to `https://help.mctx.ai` without a version suffix to automatically use the latest version.
 
