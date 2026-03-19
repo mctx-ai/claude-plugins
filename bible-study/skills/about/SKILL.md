@@ -1,18 +1,18 @@
 ---
 name: about-bible-study
-description: "Study the Bible in its original languages, trace themes across both testaments, and compare five translations — all in one conversation. Ask any question about what Scripture says and get grounded, cited answers: What does the Bible say about suffering? Topical search surfaces Job as the Bible's principal witness on suffering, Psalms on lament, Romans on justification — whole books and narratives alongside individual verses. What is the Hebrew word behind lovingkindness in Psalm 23? Compare how KJV and WEB translate John 3:16. Trace the word grace through Paul's letters. Covers 155,510 verses across KJV, WEB, ASV, YLT, and Darby with 606,140 cross-references, 17,543 Strong's entries, BDB and Thayer lexicon definitions, and Nave's 5,319 topical categories."
+description: "Study the Bible in its original languages, trace themes across both testaments, and compare five translations — all in one conversation. Ask any question about what Scripture says and get grounded, cited answers: What does the Bible say about suffering? Topical search surfaces Job as the Bible's principal witness on suffering (with explanations of why it matters and suggested starting passages), Psalms on lament, Romans on justification — whole books and narratives alongside individual verses. What is the Hebrew word behind lovingkindness in Psalm 23? Compare how KJV and WEB translate John 3:16. Trace the word grace through Paul's letters. Covers 155,510 verses across KJV, WEB, ASV, YLT, and Darby with 606,140 cross-references, 17,543 Strong's entries, BDB and Thayer lexicon definitions, and Nave's 5,319 topical categories."
 ---
 
 # Bible Study
 
-**Version:** 1.6.7
+**Version:** 1.6.8
 **Author:** mctx-ai
 **Source:** <https://github.com/mctx-ai/bible-mcp-server>
 **Homepage:** <https://github.com/mctx-ai/bible-mcp-server>
 
 ## What This Server Does
 
-Study the Bible in its original languages, trace themes across both testaments, and compare five translations — all in one conversation. Ask any question about what Scripture says and get grounded, cited answers: What does the Bible say about suffering? Topical search surfaces Job as the Bible's principal witness on suffering, Psalms on lament, Romans on justification — whole books and narratives alongside individual verses. What is the Hebrew word behind lovingkindness in Psalm 23? Compare how KJV and WEB translate John 3:16. Trace the word grace through Paul's letters. Covers 155,510 verses across KJV, WEB, ASV, YLT, and Darby with 606,140 cross-references, 17,543 Strong's entries, BDB and Thayer lexicon definitions, and Nave's 5,319 topical categories.
+Study the Bible in its original languages, trace themes across both testaments, and compare five translations — all in one conversation. Ask any question about what Scripture says and get grounded, cited answers: What does the Bible say about suffering? Topical search surfaces Job as the Bible's principal witness on suffering (with explanations of why it matters and suggested starting passages), Psalms on lament, Romans on justification — whole books and narratives alongside individual verses. What is the Hebrew word behind lovingkindness in Psalm 23? Compare how KJV and WEB translate John 3:16. Trace the word grace through Paul's letters. Covers 155,510 verses across KJV, WEB, ASV, YLT, and Darby with 606,140 cross-references, 17,543 Strong's entries, BDB and Thayer lexicon definitions, and Nave's 5,319 topical categories.
 
 ## Available Tools
 
@@ -34,7 +34,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://bible-study.mctx.ai/v1.6.7`
+**Latest version endpoint:** `https://bible-study.mctx.ai/v1.6.8`
 
 ## How to Install
 
@@ -95,7 +95,7 @@ Unlike asking your AI from general knowledge, this server gives your assistant a
 
 **Semantic search across 155,510 verses.** Describe a concept in plain language and receive passages that match the meaning, not just the exact keywords. "God's faithfulness despite human failure" finds relevant passages even when those words never appear together.
 
-**Topical research with curated context.** For "what does the Bible say about X?" questions, topical search combines Nave's curated index with semantic search and returns something richer: individual verses with source attribution, plus major biblical witnesses — the books and narratives that are the Bible's principal treatments of your topic (such as Job for suffering, or the Psalms for lament). Semantic search finds similar verses; topical search tells you where the Bible speaks most deeply on a subject.
+**Topical research with curated context.** For "what does the Bible say about X?" questions, topical search combines Nave's curated index with semantic search and returns something richer: individual verses with source attribution, plus major biblical witnesses — the books and narratives that are the Bible's principal treatments of your topic (such as Job for suffering, or the Psalms for lament). Each witness includes an explanation of why that book matters for your topic, the specific themes it addresses, and suggested anchor passages to begin reading. Semantic search finds similar verses; topical search tells you where the Bible speaks most deeply on a subject and why.
 
 **Original-language word studies.** Look up any word in its Hebrew or Greek original. Get the Strong's number, transliteration, full BDB or Thayer lexicon definition, morphological parsing, and every other verse where that same word appears — all in one response.
 
@@ -144,10 +144,11 @@ You want to understand what the Hebrew or Greek actually says beneath the Englis
 **Finding passages by topic or concept**
 You want to know what the Bible teaches on a subject, or find passages that match a meaning rather than a keyword.
 - "What does the Bible say about forgiveness?"
-- "What does the Bible say about suffering and God's faithfulness?"
+- "What does the Bible say about suffering and God's faithfulness? Show me why each book matters."
 - "Look up 'patience' in Nave's and show me the associated verses."
-- "Which books of the Bible deal most with the theme of exile and return?"
+- "Which books of the Bible deal most with the theme of exile and return? Where should I start reading?"
 - "Search for verses about light overcoming darkness."
+- "What does the Bible teach about lament and mourning? Which books address this most deeply?"
 
 **Sermon and teaching research**
 You are preparing to preach or teach and need cross-references, lexical support, and translation awareness all in one session.
@@ -173,7 +174,11 @@ You are preparing to preach or teach and need cross-references, lexical support,
 
 **Topical search for "suffering and God's faithfulness":**
 
-> **Major witnesses:** **Job** — 34 topical references across 12 chapters, the Bible's central sustained treatment of righteous suffering and divine response. **Psalms** — 28 references across 15 chapters, covering lament, crying out, divine refuge, and trust under affliction.
+> **Major witnesses:**
+>
+> **Job** — 34 topical references across 12 chapters. *Why it matters:* The Bible's central sustained treatment of righteous suffering and divine response. *Themes matched:* Innocent suffering, questioning God, divine testing, covenant faithfulness. *Suggested anchor passages:* Job 1–2 (introduction), Job 38–42 (God's response).
+>
+> **Psalms** — 28 references across 15 chapters. *Why it matters:* The poetry of lament and trust, where suffering finds voice and faith endures. *Themes matched:* Lament, crying out, divine refuge, trust under affliction. *Suggested anchor passages:* Psalm 23 (confidence), Psalm 42 (deep questioning), Psalm 88 (darkest lament).
 >
 > **Verse results:** 2 Corinthians 1:4 — God comforts us in all our affliction (Nave's: AFFLICTION + Semantic). 1 Peter 4:19 — let those who suffer according to God's will entrust their souls to a faithful Creator (Semantic). Job 1:21 — the Lord gave, and the Lord has taken away; blessed be the name of the Lord (Nave's: SUFFERING).
 
