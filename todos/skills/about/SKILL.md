@@ -5,7 +5,7 @@ description: "Personal todo list that persists across sessions and MCP clients. 
 
 # Todos
 
-**Version:** 2.0.3
+**Version:** 2.0.4
 **Author:** mctx-ai
 **Homepage:** <https://mctx.ai>
 
@@ -19,7 +19,7 @@ Tool information is not available for this server.
 
 ## How to Subscribe
 
-Subscribe to this MCP server at <https://mctx.ai/apps/todos>.
+Subscribe to this MCP server at <https://todos.mctx.ai>.
 
 This server costs $1.00 per 1,000 requests.
 
@@ -33,7 +33,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://todos.mctx.ai/v2.0.3`
+**Latest version endpoint:** `https://todos.mctx.ai/v2.0.4`
 
 ## How to Install
 
@@ -191,9 +191,9 @@ You're wrapping up a planning session in Claude and have a list of todos ready t
 
 ## Troubleshooting
 
-- **Authentication failed** — Visit <https://mctx.ai/apps/todos> to subscribe or renew your subscription. OAuth re-authentication happens automatically on the next connection attempt.
+- **Authentication failed** — Visit <https://todos.mctx.ai> to subscribe or renew your subscription. OAuth re-authentication happens automatically on the next connection attempt.
 
-- **Expired subscription (403 Forbidden)** — Your subscription has expired or been cancelled. Renew at <https://mctx.ai/apps/todos>.
+- **Expired subscription (403 Forbidden)** — Your subscription has expired or been cancelled. Renew at <https://todos.mctx.ai>.
 
 - **Version not found (404 Not Found)** — The requested server version does not exist or has been retired. Connect to `https://todos.mctx.ai` without a version suffix to automatically use the latest version.
 
