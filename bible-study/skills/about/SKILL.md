@@ -5,7 +5,7 @@ description: "Study the Bible in its original languages, trace themes across bot
 
 # Bible Study
 
-**Version:** 1.10.0
+**Version:** 1.11.0
 **Author:** mctx-ai
 **Source:** <https://github.com/mctx-ai/bible-mcp-server>
 **Homepage:** <https://github.com/mctx-ai/bible-mcp-server>
@@ -34,7 +34,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://bible-study.mctx.ai/v1.10.0`
+**Latest version endpoint:** `https://bible-study.mctx.ai/v1.11.0`
 
 ## How to Install
 
