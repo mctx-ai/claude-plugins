@@ -50,6 +50,36 @@ Need help? The [docs](https://docs.mctx.ai) cover everything from installation t
 
 ---
 
+## Real-time channels
+
+The **channel** plugin bridges real-time events from mctx-hosted MCP servers into your Claude Code session. When an MCP server calls `server.emit()`, the event arrives in your session as a channel notification — no polling from Claude's side, no manual checking.
+
+**Install the channel plugin**
+
+```
+/plugin install channel@mctx
+```
+
+**Start with channels enabled**
+
+```bash
+claude --dangerously-load-development-channels plugin:channel@mctx
+```
+
+On first launch the plugin opens your browser for mctx authentication. After that, it automatically discovers your channel-enabled subscriptions and starts delivering events.
+
+Events arrive as `<channel>` tags with provenance metadata:
+
+```
+<channel source="mctx-channel" server_id="my-game" event_type="game_event">
+[mctx/my-game] game_event: You entered a dark cave. Exits: north, east.
+</channel>
+```
+
+Requires Claude Code v2.1.80+ and an mctx account with active subscriptions to channel-enabled servers.
+
+---
+
 <details>
 <summary>For developers</summary>
 
