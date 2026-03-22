@@ -39,6 +39,12 @@
       "source": "./todos",
       "description": "Personal todo list that persists across sessions and MCP clients. Create, update, complete, reorder, and delete todos. Todos are private to your mctx account. Call status first in every new session to see what's pending.",
       "version": "2.0.4"
+    },
+    {
+      "name": "channel",
+      "source": "./channel",
+      "description": "Real-time event bridge for mctx-hosted MCP servers. Pushes server events into your Claude Code session as channel notifications — CI alerts, game events, monitoring data, and anything your server emits via server.emit(). Requires an mctx account and active subscriptions.",
+      "version": "0.1.0"
     }
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "mctx-channel": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/dist/index.js"],
+      "env": {
+        "MCTX_PLUGIN_DATA": "${CLAUDE_PLUGIN_DATA}",
+        "NODE_PATH": "${CLAUDE_PLUGIN_DATA}/node_modules"
+      }
+    }
+  }
+}

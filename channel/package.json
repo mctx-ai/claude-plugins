@@ -1,0 +1,21 @@
+{
+  "name": "@mctx-ai/channel-plugin",
+  "version": "0.1.0",
+  "description": "Real-time event bridge for mctx-hosted MCP servers",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "private": true
+}
