@@ -5,10 +5,10 @@ description: "Study the Bible in its original languages, trace themes across bot
 
 # Bible Study
 
-**Version:** 1.11.0
+**Version:** 1.11.1
 **Author:** mctx-ai
 **Source:** <https://github.com/mctx-ai/bible-mcp-server>
-**Homepage:** <https://github.com/mctx-ai/bible-mcp-server>
+**Homepage:** <https://github.com/mctx-ai/bible-study>
 
 ## What This Server Does
 
@@ -20,7 +20,7 @@ Tool information is not available for this server.
 
 ## How to Subscribe
 
-Subscribe to this MCP server at <https://bible-study.mctx.ai>.
+Subscribe to this App at <https://bible-study.mctx.ai>.
 
 This server is free to use.
 
@@ -34,7 +34,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://bible-study.mctx.ai/v1.11.0`
+**Latest version endpoint:** `https://bible-study.mctx.ai/v1.11.1`
 
 ## How to Install
 
@@ -77,7 +77,7 @@ Connect to `https://bible-study.mctx.ai` using HTTP transport. OAuth auto-discov
 
 ## About mctx
 
-mctx is a managed hosting platform for MCP servers (AI apps). Subscribe once and connect from any AI client — Claude, ChatGPT, Cursor, VS Code, and more.
+mctx is a managed hosting platform for Apps for AI. Subscribe once and connect from any AI client — Claude, ChatGPT, Cursor, VS Code, and more.
 
 ## Usage Notes
 
@@ -85,9 +85,9 @@ mctx is a managed hosting platform for MCP servers (AI apps). Subscribe once and
 
 A complete scholarly Bible study toolkit — semantic search, original-language word studies, translation comparison, cross-reference traversal, and topical research — available as AI-native tools for the first time.
 
-Without this server, deep Bible study means juggling multiple browser tabs: a concordance site here, a lexicon there, a translation comparison tool somewhere else. You lose the thread of your research every time you switch. This server brings all of that into your AI assistant, where each result informs the next question and the entire study session stays in one conversation.
+Without this App, deep Bible study means juggling multiple browser tabs: a concordance site here, a lexicon there, a translation comparison tool somewhere else. You lose the thread of your research every time you switch. This App brings all of that into your AI assistant, where each result informs the next question and the entire study session stays in one conversation.
 
-Unlike asking your AI from general knowledge, this server gives your assistant access to structured scholarly data that no training set contains: 17,543 Strong's entries with full BDB and Thayer lexicon definitions, morphological parsing for 447,734 individual words, the complete OpenBible cross-reference dataset, and Nave's 5,319 topical categories.
+Unlike asking your AI from general knowledge, this App gives your assistant access to structured scholarly data that no training set contains: 17,543 Strong's entries with full BDB and Thayer lexicon definitions, morphological parsing for 447,734 individual words, the complete OpenBible cross-reference dataset, and Nave's 5,319 topical categories.
 
 ---
 
@@ -111,7 +111,7 @@ Unlike asking your AI from general knowledge, this server gives your assistant a
 
 ## How It Works
 
-When you ask a Bible study question, the server queries a purpose-built database and returns structured data your AI assistant can reason about directly. The AI gets facts and definitions, not HTML pages it has to summarize.
+When you ask a Bible study question, the App queries a purpose-built database and returns structured data your AI assistant can reason about directly. The AI gets facts and definitions, not HTML pages it has to summarize.
 
 Seven capabilities work together: meaning-based verse discovery, curated thematic research with major witnesses, keyword search, word frequency across books, side-by-side translation rendering, passage-to-passage connections, and original-language deep dives.
 
@@ -119,7 +119,7 @@ Because each query returns structured data, the tools chain naturally in a singl
 
 ---
 
-## Using This Server
+## Using This App
 
 Once subscribed, just talk to your AI assistant as you normally would. Ask your Bible study questions naturally — no special syntax. The assistant handles the research behind the scenes.
 
