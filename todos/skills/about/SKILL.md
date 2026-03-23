@@ -1,17 +1,17 @@
 ---
 name: about-todos
-description: "Personal todo list that persists across sessions and MCP clients. Create, update, complete, reorder, and delete todos. Todos are private to your mctx account. Call status first in every new session to see what's pending."
+description: "Personal todo list that persists across sessions. Create, update, complete, reorder, and delete todos. Todos are private to your mctx account. Call status first in every new session to see what's pending."
 ---
 
 # Todos
 
-**Version:** 2.0.4
+**Version:** 2.0.5
 **Author:** mctx-ai
 **Homepage:** <https://mctx.ai>
 
 ## What This Server Does
 
-Personal todo list that persists across sessions and MCP clients. Create, update, complete, reorder, and delete todos. Todos are private to your mctx account. Call status first in every new session to see what's pending.
+Personal todo list that persists across sessions. Create, update, complete, reorder, and delete todos. Todos are private to your mctx account. Call status first in every new session to see what's pending.
 
 ## Available Tools
 
@@ -33,7 +33,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://todos.mctx.ai/v2.0.4`
+**Latest version endpoint:** `https://todos.mctx.ai/v2.0.5`
 
 ## How to Install
 
@@ -98,7 +98,7 @@ This server fixes that. One centralized todo list, completely decoupled from whi
 
 ## What You Get
 
-**Client-agnostic access.** Todos work in Claude, Claude Code, Cursor, Windsurf — any AI tool with MCP capability. Add in one, see in all. The client is irrelevant.
+**Client-agnostic access.** Todos work in Claude, Claude Code, Cursor, Windsurf — any AI tool. Add in one, see in all. The client is irrelevant.
 
 **Cross-device, cross-session sync.** You're away from your desk and remember something you need to do. Tell your phone's AI to add it. Come back to your desktop and it's in your list. Five sessions open at once? A todo added in session A is immediately visible in session B.
 
@@ -112,7 +112,7 @@ This server fixes that. One centralized todo list, completely decoupled from whi
 
 ## How It Works
 
-Connect any MCP-capable AI client to this server using your mctx account. From that point, your todos are part of that AI's working context — across every client, on every device. At the start of a session, your AI checks what's pending and what's changed. As you work, add tasks, mark things done, and reprioritize — with a single natural-language request.
+Connect any MCP-capable AI client to this app using your mctx account. From that point, your todos are part of that AI's working context — across every client, on every device. At the start of a session, your AI checks what's pending and what's changed. As you work, add tasks, mark things done, and reprioritize — with a single natural-language request.
 
 Your todos are private to your account. No one else can see them.
 
