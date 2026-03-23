@@ -5,7 +5,7 @@ description: "One centralized note store across every AI client — Claude, Chat
 
 # Notes
 
-**Version:** 1.4.4
+**Version:** 1.4.5
 **Author:** mctx-ai
 **Homepage:** <https://mctx.ai>
 
@@ -33,7 +33,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://notes.mctx.ai/v1.4.4`
+**Latest version endpoint:** `https://notes.mctx.ai/v1.4.5`
 
 ## How to Install
 
@@ -88,7 +88,7 @@ Tell Claude to save a note. Open ChatGPT. It's already there. That's not a featu
 
 AI memory is session-scoped. The moment you close a tab, your context is gone. Open a new session and you're starting from scratch — re-explaining the project, re-stating the decision, re-describing the thing you just figured out. And if you switch from Claude Code to Cursor to Windsurf? Each one is its own island. Your notes don't travel.
 
-This server fixes that. One centralized note store, completely decoupled from whichever AI client you're using right now. Notes you save in Claude Code show up in ChatGPT. Notes you save on your phone appear on your desktop. It doesn't matter where you saved them or where you're reading them — they're always there.
+This app fixes that. One centralized note store, completely decoupled from whichever AI client you're using right now. Notes you save in Claude Code show up in ChatGPT. Notes you save on your phone appear on your desktop. It doesn't matter where you saved them or where you're reading them — they're always there.
 
 ---
 
@@ -114,13 +114,13 @@ This server fixes that. One centralized note store, completely decoupled from wh
 
 ## How It Works
 
-Connect any MCP-capable AI client to this server using your mctx account. From that point, your notes are part of that AI's working context — across every client, on every device. At the start of a session, your AI can check what notes exist and what's changed. As you work, save decisions, plans, findings, anything — with a single natural-language request. Those notes are immediately available everywhere else.
+Connect any MCP-capable AI client to this app using your mctx account. From that point, your notes are part of that AI's working context — across every client, on every device. At the start of a session, your AI can check what notes exist and what's changed. As you work, save decisions, plans, findings, anything — with a single natural-language request. Those notes are immediately available everywhere else.
 
 Your notes are private to your account. No one else can see them.
 
 ---
 
-## Using This Server
+## Using This App
 
 You never need to know any tool names. Just say what you mean and your AI handles the rest.
 
