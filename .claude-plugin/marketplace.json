@@ -11,6 +11,12 @@
       "version": "1.11.0"
     },
     {
+      "name": "channel",
+      "source": "./channel",
+      "description": "Real-time event bridge for mctx-hosted MCP servers. Pushes server events into your Claude Code session as channel notifications — CI alerts, game events, monitoring data, and anything your server emits via server.emit(). Requires an mctx account and active subscriptions.",
+      "version": "0.1.0"
+    },
+    {
       "name": "example-mcp-server",
       "source": "./example-mcp-server",
       "description": "Build complete MCP servers with our framework — study or fork this reference implementation. Covers all @mctx-ai/mcp-server patterns: tool types (sync string, object return, generators, LLM sampling), resource URIs (static, dynamic templates), prompt formats (single-message, multi-message), tool annotations (readOnly, destructive, openWorld, idempotent), structured logging, environment variables, and test coverage. The whoami tool demonstrates user identity via ctx.userId. Includes setup.sh for quick template generation.",
@@ -20,7 +26,7 @@
       "name": "help",
       "source": "./help",
       "description": "Get accurate answers about mctx and MCP servers from live docs, not outdated training data. Look up deployment steps, payouts, pricing, or framework questions instantly. Works with Claude Code, Cursor, Codex, and any MCP client. Coverage: server framework, deployment, environment variables, subscriptions, payouts, pricing, tools, resources, transports, authentication, versioning. Questions you can ask: \"How do I define a tool with input validation?\" \"What does mctx need in package.json?\" \"How do I set up payouts?\" \"What's the difference between ready and live status?\" \"How does the 80/20 split work?\" \"Why did my deployment fail?\" \"What MCP resources and tools are available?\"",
-      "version": "1.0.28"
+      "version": "1.0.29"
     },
     {
       "name": "notes",
@@ -39,12 +45,6 @@
       "source": "./todos",
       "description": "Personal todo list that persists across sessions and MCP clients. Create, update, complete, reorder, and delete todos. Todos are private to your mctx account. Call status first in every new session to see what's pending.",
       "version": "2.0.4"
-    },
-    {
-      "name": "channel",
-      "source": "./channel",
-      "description": "Real-time event bridge for mctx-hosted MCP servers. Pushes server events into your Claude Code session as channel notifications — CI alerts, game events, monitoring data, and anything your server emits via server.emit(). Requires an mctx account and active subscriptions.",
-      "version": "0.1.0"
     }
   ]
 }
