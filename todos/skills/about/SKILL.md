@@ -5,7 +5,7 @@ description: "Personal todo list that persists across sessions. Create, update, 
 
 # Todos
 
-**Version:** 2.0.6
+**Version:** 2.0.7
 **Author:** mctx-ai
 **Homepage:** <https://mctx.ai>
 
@@ -33,7 +33,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://todos.mctx.ai/v2.0.6`
+**Latest version endpoint:** `https://todos.mctx.ai/v2.0.7`
 
 ## How to Install
 
@@ -107,6 +107,28 @@ This server fixes that. One centralized todo list, completely decoupled from whi
 **Full lifecycle management.** Create, update, complete, reorder, delete, restore. Soft-delete with 30-day recovery — if you remove something by accident, you can get it back. Custom sort order so your list reflects how you actually work.
 
 **Single identity, zero setup.** Your mctx account is your todo identity. Log in from any client on any machine and your complete todo list is immediately available. No configuration, no sync — it's automatic.
+
+**Due-date notifications in Claude Code.** Set a due date and get notified at that exact moment — no polling, no checking, no "did I miss that?" It just tells you when something is due.
+
+---
+
+## Due Date Notifications (Claude Code)
+
+When you set a due date on a todo, your Claude Code session gets notified the moment it arrives. Not a reminder to check — an actual notification, at the exact time, telling you that todo is due.
+
+This works automatically. There's nothing to configure beyond having the mctx plugin installed in Claude Code.
+
+**The lifecycle takes care of itself:**
+
+- **Change the due date to a future time** — the old notification is replaced with a new one for the updated time.
+- **Clear the due date or move it into the past** — the notification is cancelled.
+- **Complete the todo** — the notification is cancelled. You already handled it.
+- **Delete the todo** — notification cancelled. Gone is gone.
+- **Restore a deleted todo** — notification is re-scheduled if the due date is still in the future.
+
+If you use this server in Cursor, Windsurf, or any other MCP client, everything works — all nine tools, full functionality. You just won't get push notifications there. Notifications are a Claude Code enhancement, not a requirement.
+
+**Install the mctx plugin for Claude Code:** Get the Todos server from the [mctx plugin directory](https://mctx.ai) and add it to Claude Code. Once connected, your todo list is immediately available.
 
 ---
 
