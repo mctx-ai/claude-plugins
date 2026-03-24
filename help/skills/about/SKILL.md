@@ -5,7 +5,7 @@ description: "Get accurate answers about mctx and MCP servers from live docs, no
 
 # Help
 
-**Version:** 1.0.30
+**Version:** 1.0.31
 **Author:** mctx-ai
 **Homepage:** <https://docs.mctx.ai>
 
@@ -19,7 +19,7 @@ Tool information is not available for this server.
 
 ## How to Subscribe
 
-Subscribe to this MCP server at <https://help.mctx.ai>.
+Subscribe to this App at <https://help.mctx.ai>.
 
 This server is free to use.
 
@@ -33,7 +33,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://help.mctx.ai/v1.0.30`
+**Latest version endpoint:** `https://help.mctx.ai/v1.0.31`
 
 ## How to Install
 
@@ -76,7 +76,7 @@ Connect to `https://help.mctx.ai` using HTTP transport. OAuth auto-discovery via
 
 ## About mctx
 
-mctx is a managed hosting platform for MCP servers (AI apps). Subscribe once and connect from any AI client — Claude, ChatGPT, Cursor, VS Code, and more.
+mctx is a managed hosting platform for Apps for AI. Subscribe once and connect from any AI client — Claude, ChatGPT, Cursor, VS Code, and more.
 
 ## Usage Notes
 
