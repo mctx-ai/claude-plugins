@@ -5,7 +5,7 @@ description: "Get accurate answers about mctx and MCP servers from live docs, no
 
 # Help
 
-**Version:** 1.0.35
+**Version:** 1.0.36
 **Author:** mctx-ai
 **Homepage:** <https://docs.mctx.ai>
 
@@ -33,7 +33,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://help.mctx.ai/v1.0.35`
+**Latest version endpoint:** `https://help.mctx.ai/v1.0.36`
 
 ## How to Install
 
@@ -94,7 +94,7 @@ Unlike asking your AI directly, this server doesn't rely on what the model happe
 
 **Guided walkthroughs** — Ask where to start and the server walks you through the process step by step, one step at a time, with source links you can follow to the full documentation.
 
-**mctx-specific answers** — Deployment lifecycle, the `@mctx-ai/mcp-server` TypeScript framework, environment variables, payouts, subscriptions, pricing — the full platform, fully searchable from your AI conversation.
+**mctx-specific answers** — Deployment lifecycle, the `@mctx-ai/app` TypeScript framework, environment variables, payouts, subscriptions, pricing — the full platform, fully searchable from your AI conversation.
 
 ## How it works
 
@@ -118,7 +118,7 @@ You're new to mctx or starting your first server and want a clear path forward b
 - "What's the quickest way to deploy an MCP server?"
 
 **Building with the framework**
-You're writing code and want accurate information about the `@mctx-ai/mcp-server` TypeScript framework before building something the wrong way.
+You're writing code and want accurate information about the `@mctx-ai/app` TypeScript framework before building something the wrong way.
 
 - "How do I define a tool with input validation?"
 - "What does the T type system do?"
