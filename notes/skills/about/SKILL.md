@@ -1,17 +1,17 @@
 ---
 name: about-notes
-description: "One centralized note store across every AI client — Claude, ChatGPT, Cursor, Codex, Windsurf. Save a note in Claude Code, read it in Cursor. Save on your phone, pick it up on your desktop. Say 'catch me up on what we were working on' and your AI surfaces your plans, decisions, and findings from any previous session in any client. Say 'save this decision before I close the tab' and it's immediately available everywhere. Say 'I'm switching to Cursor — save where we are so I can pick it up there' and your next AI session has full context. Notes are encrypted at rest with a per-user AES-256-GCM key. Deleted notes stay recoverable for 30 days. Tag notes to categorize them — say 'save this and tag it auth' — then filter by tag later: 'show me all my auth notes.' Add, remove, or replace tags on any existing note without rewriting it. Your mctx account is your notes identity — one account, instant access from any AI tool."
+description: "Centralized note store across AI clients: Claude, ChatGPT, Cursor, Codex, Windsurf. Save in one client, access in another instantly. Across devices — phone, desktop, everywhere. Cross-session context: 'catch me up' surfaces plans and findings from any prior session. AES-256-GCM encryption at rest, per-user key isolation. Soft delete with 30-day recovery window. Pin notes to exempt from cleanup and prioritize. Tag notes for categorization and filtering ('tag: auth'). Your mctx account is your identity — instant access from any AI tool."
 ---
 
 # Notes
 
-**Version:** 1.5.0
+**Version:** 1.5.2
 **Author:** mctx-ai
 **Homepage:** <https://mctx.ai>
 
 ## What This Server Does
 
-One centralized note store across every AI client — Claude, ChatGPT, Cursor, Codex, Windsurf. Save a note in Claude Code, read it in Cursor. Save on your phone, pick it up on your desktop. Say 'catch me up on what we were working on' and your AI surfaces your plans, decisions, and findings from any previous session in any client. Say 'save this decision before I close the tab' and it's immediately available everywhere. Say 'I'm switching to Cursor — save where we are so I can pick it up there' and your next AI session has full context. Notes are encrypted at rest with a per-user AES-256-GCM key. Deleted notes stay recoverable for 30 days. Tag notes to categorize them — say 'save this and tag it auth' — then filter by tag later: 'show me all my auth notes.' Add, remove, or replace tags on any existing note without rewriting it. Your mctx account is your notes identity — one account, instant access from any AI tool.
+Centralized note store across AI clients: Claude, ChatGPT, Cursor, Codex, Windsurf. Save in one client, access in another instantly. Across devices — phone, desktop, everywhere. Cross-session context: 'catch me up' surfaces plans and findings from any prior session. AES-256-GCM encryption at rest, per-user key isolation. Soft delete with 30-day recovery window. Pin notes to exempt from cleanup and prioritize. Tag notes for categorization and filtering ('tag: auth'). Your mctx account is your identity — instant access from any AI tool.
 
 ## Available Tools
 
@@ -33,7 +33,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://notes.mctx.ai/v1.5.0`
+**Latest version endpoint:** `https://notes.mctx.ai/v1.5.2`
 
 ## How to Install
 
@@ -172,6 +172,8 @@ Keep critical notes always at the top of your list and protected from stale clea
 - "Unpin that note, I'm done with that phase"
 
 Pinned notes sort above all unpinned notes in list results. They are also exempt from stale detection, so they won't be flagged or purged no matter how long ago they were last accessed.
+
+Use `pin_note` to pin a note and `unpin_note` to unpin it.
 
 ### Managing tags on existing notes
 
