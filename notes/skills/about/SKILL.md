@@ -5,7 +5,7 @@ description: "One centralized note store across every AI client — Claude, Chat
 
 # Notes
 
-**Version:** 1.4.5
+**Version:** 1.5.0
 **Author:** mctx-ai
 **Homepage:** <https://mctx.ai>
 
@@ -19,7 +19,7 @@ Tool information is not available for this server.
 
 ## How to Subscribe
 
-Subscribe to this MCP server at <https://notes.mctx.ai>.
+Subscribe to this App at <https://notes.mctx.ai>.
 
 This server costs $1.00 per 1,000 requests.
 
@@ -33,7 +33,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://notes.mctx.ai/v1.4.5`
+**Latest version endpoint:** `https://notes.mctx.ai/v1.5.0`
 
 ## How to Install
 
@@ -76,7 +76,7 @@ Connect to `https://notes.mctx.ai` using HTTP transport. OAuth auto-discovery vi
 
 ## About mctx
 
-mctx is a managed hosting platform for MCP servers (AI apps). Subscribe once and connect from any AI client — Claude, ChatGPT, Cursor, VS Code, and more.
+mctx is a managed hosting platform for Apps for AI. Subscribe once and connect from any AI client — Claude, ChatGPT, Cursor, VS Code, and more.
 
 ## Usage Notes
 

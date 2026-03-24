@@ -32,7 +32,7 @@
       "name": "notes",
       "source": "./notes",
       "description": "One centralized note store across every AI client — Claude, ChatGPT, Cursor, Codex, Windsurf. Save a note in Claude Code, read it in Cursor. Save on your phone, pick it up on your desktop. Say 'catch me up on what we were working on' and your AI surfaces your plans, decisions, and findings from any previous session in any client. Say 'save this decision before I close the tab' and it's immediately available everywhere. Say 'I'm switching to Cursor — save where we are so I can pick it up there' and your next AI session has full context. Notes are encrypted at rest with a per-user AES-256-GCM key. Deleted notes stay recoverable for 30 days. Tag notes to categorize them — say 'save this and tag it auth' — then filter by tag later: 'show me all my auth notes.' Add, remove, or replace tags on any existing note without rewriting it. Your mctx account is your notes identity — one account, instant access from any AI tool.",
-      "version": "1.4.5"
+      "version": "1.5.0"
     },
     {
       "name": "todo",
