@@ -5,7 +5,7 @@ description: "Get accurate answers about mctx and MCP servers from live docs, no
 
 # Help
 
-**Version:** 1.0.37
+**Version:** 1.0.38
 **Author:** mctx-ai
 **Homepage:** <https://docs.mctx.ai>
 
@@ -33,7 +33,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://help.mctx.ai/v1.0.37`
+**Latest version endpoint:** `https://help.mctx.ai/v1.0.38`
 
 ## How to Install
 
