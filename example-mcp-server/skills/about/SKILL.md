@@ -1,18 +1,18 @@
 ---
 name: about-example-mcp-server
-description: "Build complete MCP servers with our framework — study or fork this reference implementation. Covers all @mctx-ai/mcp-server patterns: tool types (sync string, object return, generators, LLM sampling), resource URIs (static, dynamic templates), prompt formats (single-message, multi-message), tool annotations (readOnly, destructive, openWorld, idempotent), structured logging, environment variables, and test coverage. The whoami tool demonstrates user identity via ctx.userId. Includes setup.sh for quick template generation."
+description: "Build complete Apps with our framework — study or fork this reference implementation. Covers all @mctx-ai/mcp-server patterns: tool types (sync string, object return, generators, LLM sampling), resource URIs (static, dynamic templates), prompt formats (single-message, multi-message), tool annotations (readOnly, destructive, openWorld, idempotent), structured logging, environment variables, and test coverage. The whoami tool demonstrates user identity via ctx.userId. Includes setup.sh for quick template generation."
 ---
 
 # Example MCP Server
 
-**Version:** 1.3.0
+**Version:** 1.3.1
 **Author:** mctx-ai
 **Source:** <https://github.com/mctx-ai/example-mcp-server>
 **Homepage:** <https://mctx.ai>
 
 ## What This Server Does
 
-Build complete MCP servers with our framework — study or fork this reference implementation. Covers all @mctx-ai/mcp-server patterns: tool types (sync string, object return, generators, LLM sampling), resource URIs (static, dynamic templates), prompt formats (single-message, multi-message), tool annotations (readOnly, destructive, openWorld, idempotent), structured logging, environment variables, and test coverage. The whoami tool demonstrates user identity via ctx.userId. Includes setup.sh for quick template generation.
+Build complete Apps with our framework — study or fork this reference implementation. Covers all @mctx-ai/mcp-server patterns: tool types (sync string, object return, generators, LLM sampling), resource URIs (static, dynamic templates), prompt formats (single-message, multi-message), tool annotations (readOnly, destructive, openWorld, idempotent), structured logging, environment variables, and test coverage. The whoami tool demonstrates user identity via ctx.userId. Includes setup.sh for quick template generation.
 
 ## Available Tools
 
@@ -20,7 +20,7 @@ Tool information is not available for this server.
 
 ## How to Subscribe
 
-Subscribe to this MCP server at <https://example-mcp-server.mctx.ai>.
+Subscribe to this App at <https://example-mcp-server.mctx.ai>.
 
 This server is free to use.
 
@@ -34,7 +34,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://example-mcp-server.mctx.ai/v1.3.0`
+**Latest version endpoint:** `https://example-mcp-server.mctx.ai/v1.3.1`
 
 ## How to Install
 
@@ -77,15 +77,15 @@ Connect to `https://example-mcp-server.mctx.ai` using HTTP transport. OAuth auto
 
 ## About mctx
 
-mctx is a managed hosting platform for MCP servers (AI apps). Subscribe once and connect from any AI client — Claude, ChatGPT, Cursor, VS Code, and more.
+mctx is a managed hosting platform for Apps for AI. Subscribe once and connect from any AI client — Claude, ChatGPT, Cursor, VS Code, and more.
 
 ## Usage Notes
 
 <img src="https://mctx.ai/brand/logo-purple.png" alt="mctx" width="120">
 
-# Example MCP Server
+# Example App
 
-The comprehensive reference implementation for [`@mctx-ai/mcp-server`](https://github.com/mctx-ai/mcp-server). Every framework capability in one well-commented file — clone it, study it, fork it as a template for your own MCP server.
+The comprehensive reference implementation for [`@mctx-ai/mcp-server`](https://github.com/mctx-ai/mcp-server). Every framework capability in one well-commented file — clone it, study it, fork it as a template for your own App.
 
 ---
 
@@ -183,7 +183,7 @@ notify(message: "Build complete")
   (the channel event appears as a real-time notification in the Claude Code session)
 
 Read URI: docs://readme
-→ "Welcome to the example MCP server built with @mctx-ai/mcp-server..."
+→ "Welcome to the example App built with @mctx-ai/mcp-server..."
 
 Read URI: user://42
 → { "id": "42", "name": "User 42", "joined": "2024-01-01", "plan": "pro" }
@@ -311,22 +311,22 @@ Do not edit the `release` branch directly. Do not commit `dist/index.js` on `mai
 
 ---
 
-## Making Your Server Discoverable
+## Making Your App Discoverable
 
-Three `package.json` fields and `README.md` determine how developers find your server.
+Three `package.json` fields and `README.md` determine how developers find your App.
 
 - **`description`** — Appears in the MCP Community Registry (truncates at ~100–150 chars) and on your mctx.ai page. Front-load the most important information.
 - **`homepage`** — Clickable link on your public mctx.ai page. Point it at your GitHub repo or docs site.
-- **`README.md`** — Becomes the documentation on your mctx.ai page and is indexed by Context7 for AI assistant discovery. Lead with what the server does; the first ~4,000 characters are what AI assistants use to understand and recommend it.
+- **`README.md`** — Becomes the documentation on your mctx.ai page and is indexed by Context7 for AI assistant discovery. Lead with what the App does; the first ~4,000 characters are what AI assistants use to understand and recommend it.
 
 ---
 
 ## Learn More
 
 - [`@mctx-ai/mcp-server`](https://github.com/mctx-ai/mcp-server) — Framework documentation and API reference
-- [docs.mctx.ai](https://docs.mctx.ai) — Platform guides for deploying and managing MCP servers
-- [mctx.ai](https://mctx.ai) — Host your MCP server for free
-- [MCP Specification](https://modelcontextprotocol.io) — The protocol spec this server implements
+- [docs.mctx.ai](https://docs.mctx.ai) — Platform guides for deploying and managing your Apps
+- [mctx.ai](https://mctx.ai) — Host your App for free
+- [MCP Specification](https://modelcontextprotocol.io) — The protocol spec this App implements
 
 
 
