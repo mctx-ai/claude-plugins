@@ -32,7 +32,7 @@
       "name": "notes",
       "source": "./notes",
       "description": "Centralized note store across AI clients: Claude, ChatGPT, Cursor, Codex, Windsurf. Save in one client, access in another instantly. Across devices — phone, desktop, everywhere. Cross-session context: 'catch me up' surfaces plans and findings from any prior session. AES-256-GCM encryption at rest, per-user key isolation. Soft delete with 30-day recovery window. Pin notes to exempt from cleanup and prioritize. Tag notes for categorization and filtering ('tag: auth'). Your mctx account is your identity — instant access from any AI tool.",
-      "version": "1.5.2"
+      "version": "1.5.3"
     },
     {
       "name": "todo",

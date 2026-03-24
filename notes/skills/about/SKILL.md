@@ -5,7 +5,7 @@ description: "Centralized note store across AI clients: Claude, ChatGPT, Cursor,
 
 # Notes
 
-**Version:** 1.5.2
+**Version:** 1.5.3
 **Author:** mctx-ai
 **Homepage:** <https://mctx.ai>
 
@@ -33,7 +33,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://notes.mctx.ai/v1.5.2`
+**Latest version endpoint:** `https://notes.mctx.ai/v1.5.3`
 
 ## How to Install
 
