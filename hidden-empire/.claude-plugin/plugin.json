@@ -1,0 +1,15 @@
+{
+  "name": "hidden-empire",
+  "version": "0.3.4",
+  "description": "Play the classic Zork I text adventure through any MCP client. Explore, solve puzzles, and save your progress.",
+  "author": {
+    "name": "mctx-ai"
+  },
+  "homepage": "https://hidden-empire.mctx.ai",
+  "repository": "https://github.com/mctx-ai/claude-plugins",
+  "keywords": [
+    "mctx",
+    "mcp"
+  ],
+  "icon": "https://mctx.ai/brand/favicon-purple.png"
+}

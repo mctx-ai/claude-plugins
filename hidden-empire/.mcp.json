@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "hidden-empire": {
+      "type": "http",
+      "url": "https://hidden-empire.mctx.ai"
+    }
+  }
+}
