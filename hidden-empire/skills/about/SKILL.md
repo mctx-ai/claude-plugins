@@ -1,17 +1,17 @@
 ---
 name: about-hidden-empire
-description: "Play the classic Zork I text adventure through any MCP client. Explore, solve puzzles, and save your progress."
+description: "Explore a classic text adventure through natural conversation with your AI. No parser syntax needed. Say \"go north,\" \"open the mailbox,\" or \"check my inventory\" and the game responds. Save multiple playthroughs by name and pick up across any session with your position, inventory, and score intact. An independent adaptation of the MIT-licensed Zork I source code, reimagined for the AI-native world."
 ---
 
 # Hidden Empire
 
-**Version:** 0.3.4
+**Version:** 0.3.5
 **Author:** mctx-ai
 **Homepage:** <https://github.com/mctx-ai/hidden-empire>
 
 ## What This Server Does
 
-Play the classic Zork I text adventure through any MCP client. Explore, solve puzzles, and save your progress.
+Explore a classic text adventure through natural conversation with your AI. No parser syntax needed. Say "go north," "open the mailbox," or "check my inventory" and the game responds. Save multiple playthroughs by name and pick up across any session with your position, inventory, and score intact. An independent adaptation of the MIT-licensed Zork I source code, reimagined for the AI-native world.
 
 ## Available Tools
 
@@ -33,7 +33,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://hidden-empire.mctx.ai/v0.3.4`
+**Latest version endpoint:** `https://hidden-empire.mctx.ai/v0.3.5`
 
 ## How to Install
 
@@ -82,131 +82,124 @@ mctx is a managed hosting platform for Apps for AI. Subscribe once and connect f
 
 # The Hidden Empire
 
-## A Text Adventure App Built on mctx
+Play a classic text adventure through natural conversation with your AI assistant.
 
-Explore a richly detailed fantasy world with interactive puzzles, environmental storytelling, and real-time gameplay events through any MCP-compatible client.
+Most interactive fiction requires a dedicated app, a browser tab, or a specific platform. You lose your place, lose the atmosphere, and lose the thread. The Hidden Empire puts the game directly inside your AI conversation — no separate interface, no switching contexts. You explore, solve puzzles, and collect treasure by talking to your AI the same way you already do. Your progress persists across every session, so you can pick up mid-dungeon on Monday morning exactly where you left off Friday night.
 
-> This project is an independent TypeScript MCP adaptation based on the MIT-licensed open-source release of Zork I. It is not affiliated with or endorsed by Microsoft, Activision, or Infocom.
+---
 
-## Features
+## Why not just play Zork somewhere else?
 
-### MCP Tools
+You could. But nowhere else does the game live inside your AI assistant, with your AI translating natural conversation into game commands, keeping full game state — your position, inventory, and score — across every session, and responding to natural language — not just exact parser commands. The Hidden Empire turns a classic into a conversational adventure.
 
-- **start_game** — Initialize a new game session
-- **do_command** — Execute player commands in the adventure
-- **list_saves** — View available save files
-- **load_save** — Restore a previous game state
-- **reset_game** — Clear current session and start fresh
+---
 
-### Universal Compatibility
+## What you get
 
-Works with any MCP client, enabling seamless integration into your preferred development environment or AI assistant.
+**Cross-session persistence** — Save a playthrough by name and load it anytime, from any session. Your progress never depends on keeping a browser tab open or staying in the same conversation.
 
-### Real-Time Events
+**Multiple simultaneous playthroughs** — Run separate games for different exploration strategies or share a playthrough name with a friend. Up to 20 named saves per account.
 
-Game events are emitted as MCP channel events, enabling dynamic UI updates in clients that support real-time channels.
+**Natural language input** — You do not need to know parser syntax. Say "go through the door to the north" or just "north." The game understands both.
 
-### Persistent State
+**Real-time game events** — In supported AI clients, game events arrive as they happen — room descriptions, item discoveries, score changes — without waiting for a full response cycle.
 
-Game snapshots are automatically saved, allowing you to pause and resume your adventure at any point.
+**A complete classic adventure** — Underground mazes, locked doors, hidden treasure, devious puzzles, and a troll who really does not want you to pass. Based on the full Zork I source.
 
-## Quick Start
+---
 
-### Prerequisites
+## How it works
 
-- An [mctx.ai](https://mctx.ai) account with authentication configured
-- A [Cloudflare](https://cloudflare.com) account with a Workers KV namespace for save persistence
+You start a game by asking your AI assistant to begin a playthrough. The game opens with a classic scene: an open field west of a white house, a small mailbox nearby. From there you navigate, examine objects, pick up items, and solve puzzles entirely through conversation. When you want to stop, your progress is automatically saved. The next time you ask your AI to load that save, you are back in exactly the same room, with the same inventory, same score, same moves.
 
-### Environment Variables
+---
 
-Game state persistence requires one of the following storage options. Set the variables in your mctx server environment before deploying.
+## Usage in conversation
 
-**Option A — Cloudflare Workers KV (recommended)**
+Talk to your AI assistant the way you normally would. The game activates when you ask to start, continue, or manage a playthrough.
 
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `KV_ACCOUNT_ID` | Yes | Your Cloudflare account ID |
-| `KV_NAMESPACE_ID` | Yes | KV namespace ID with read/write permissions |
-| `KV_API_TOKEN` | Yes | Cloudflare API token with Workers KV read/write permissions |
+During gameplay, your AI translates natural language into the parser commands the game engine understands. You can say "head toward the forest" instead of "north," or "grab the brass lantern" instead of "take lantern" — the AI figures out the intent and issues the right command. You can also ask questions like "what's in my inventory?" or "where am I?" and get a direct answer.
 
-**Option B — Upstash Redis (legacy fallback)**
+Outside gameplay, you can list your saved playthroughs, load a specific one by name, or reset a playthrough to start fresh. The AI handles the game management the same way it handles the game itself — through plain conversation.
 
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `UPSTASH_URL` | Yes | Your Upstash Redis REST URL |
-| `UPSTASH_TOKEN` | Yes | Your Upstash Redis REST token |
+---
 
-Cloudflare KV is used when all three `KV_*` variables are present. Upstash is used otherwise. If neither is configured, game state is stored in memory and lost on restart.
+## Example phrases
 
-### Connect in Claude Code
-
-Add the server to your Claude Code MCP configuration:
-
-```json
-{
-  "mcpServers": {
-    "hidden-empire": {
-      "command": "mctx",
-      "args": ["connect", "hidden-empire"]
-    }
-  }
-}
-```
-
-Then ask Claude: **"Start a new game of The Hidden Empire."**
-
-Claude will call `start_game`, return the opening text, and you play from there.
-
-## How to Play
-
-Once connected, try these prompts in your MCP client:
-
-**Start playing:**
+**Starting a new adventure**
+You want to begin fresh — or start a named run you can return to later.
 - "Start a new game of The Hidden Empire"
-- "Begin a Hidden Empire adventure called 'my-run'"
+- "Begin a Hidden Empire playthrough called 'first-run'"
+- "Let's play The Hidden Empire"
 
-**During the game:**
+**Exploring the world**
+You are in a room and want to move or look around.
 - "Go north"
-- "Take the lamp"
 - "Look around"
-- "Check my inventory"
 - "Examine the mailbox"
+- "Open the door"
+- "What do I see here?"
 
-**Managing saves:**
+**Working with items**
+You have found something and want to interact with it.
+- "Take the lamp"
+- "Check my inventory"
+- "Read the leaflet"
+- "Put the sword in the case"
+- "Open the trapdoor"
+
+**Solving puzzles**
+You are stuck and want to try something.
+- "Turn on the lamp"
+- "Try the key on the lock"
+- "Move the rug"
+- "Climb the rope"
+
+**Managing saves**
+You want to organize your playthroughs or resume a previous one.
 - "List my saved games"
-- "Load my save called 'my-run'"
+- "Load my save called 'first-run'"
 - "Reset my current playthrough"
 
-## Sample Exchange
+---
 
-Here is what a typical session looks like:
+## Example responses
 
-> **You:** Start a new game of The Hidden Empire.
->
-> **Claude:** *(calls `start_game`)* You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here. What would you like to do?
->
-> **You:** Open the mailbox.
->
-> **Claude:** *(calls `do_command` with "open mailbox")* Opening the small mailbox reveals a leaflet. Score: 0 | Moves: 1
+When you say "Start a new game of The Hidden Empire," your AI responds with the game's opening text and waits for your next move:
 
-## Architecture
+> You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.
+> Score: 0 | Moves: 0
 
-The Hidden Empire follows a four-layer architecture:
+When you say "Open the mailbox," your AI executes the command and describes the result:
 
-1. **Source Layer** — Original Zork I source code
-2. **Build Layer** — TypeScript compilation and transpilation
-3. **Runtime Layer** — Virtual machine execution and game state management
-4. **MCP Layer** — Protocol interface and client communication
+> Opening the small mailbox reveals a leaflet.
+> Score: 0 | Moves: 1
 
-This modular approach ensures maintainability, testability, and extensibility while preserving the original game logic.
+When you say "List my saved games," your AI returns your active playthroughs:
+
+> **weekend-run** — Score: 35 | Moves: 42 | Last played: 2 days ago
+> **first-run** — Score: 10 | Moves: 18 | Last played: 5 days ago
+
+---
+
+## Real-world scenarios
+
+**The weekend exploration**
+On Saturday afternoon you start a new playthrough called "weekend-run." You explore the field, find the front door boarded shut, discover a path around back, and make it into the house before dinner interrupts. Sunday morning you ask your AI to load "weekend-run" and you are standing in the kitchen exactly where you stopped, lamp in hand, troll blocking the passage ahead.
+
+**The returning player**
+Three weeks ago you left off deep in the dungeon with a score of 85 and no idea what to do next. You open a new session, ask your AI to list your saves, and load the one from before. Your AI loads the save, shows you the room description, and you pick up exactly where you were — inventory intact, score preserved, every item in its place.
+
+**The parallel strategist**
+You want to try two different approaches to the underground maze. You start "maze-route-a" and explore one path until you get stuck. Then you start "maze-route-b" and try a different strategy. Both playthroughs stay active. You can switch between them to compare progress or abandon the dead end and continue with the one that worked.
+
+---
 
 ## Legal
 
-This project includes copyrighted material from the open-source Zork I release. See the [NOTICE](./NOTICE) file for attribution and legal disclaimers.
+This project is an independent adaptation based on the MIT-licensed open-source release of Zork I. It is not affiliated with or endorsed by Microsoft, Activision, or Infocom. See the [NOTICE](./NOTICE) file for attribution details.
 
-## License
-
-The Hidden Empire is released under the MIT License. See [LICENSE](./LICENSE) for full details.
+This project is released under the MIT License. See [LICENSE](./LICENSE) for full details.
 
 Copyright (c) 2026 The Hidden Empire Project Contributors
 

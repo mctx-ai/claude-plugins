@@ -37,8 +37,8 @@
     {
       "name": "hidden-empire",
       "source": "./hidden-empire",
-      "description": "Play the classic Zork I text adventure through any MCP client. Explore, solve puzzles, and save your progress.",
-      "version": "0.3.4"
+      "description": "Explore a classic text adventure through natural conversation with your AI. No parser syntax needed. Say \"go north,\" \"open the mailbox,\" or \"check my inventory\" and the game responds. Save multiple playthroughs by name and pick up across any session with your position, inventory, and score intact. An independent adaptation of the MIT-licensed Zork I source code, reimagined for the AI-native world.",
+      "version": "0.3.5"
     },
     {
       "name": "notes",
