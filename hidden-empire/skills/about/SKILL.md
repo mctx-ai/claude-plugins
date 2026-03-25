@@ -5,7 +5,7 @@ description: "Explore a classic text adventure through natural conversation with
 
 # Hidden Empire
 
-**Version:** 0.5.1
+**Version:** 0.6.0
 **Author:** mctx-ai
 **Homepage:** <https://github.com/mctx-ai/hidden-empire>
 
@@ -33,7 +33,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://hidden-empire.mctx.ai/v0.5.1`
+**Latest version endpoint:** `https://hidden-empire.mctx.ai/v0.6.0`
 
 ## How to Install
 
