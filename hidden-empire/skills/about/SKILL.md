@@ -1,17 +1,17 @@
 ---
 name: about-hidden-empire
-description: "Explore a classic text adventure through natural conversation with your AI. No parser syntax needed. Say \"go north,\" \"open the mailbox,\" or \"check my inventory\" and the game responds. Save multiple playthroughs by name and pick up across any session with your position, inventory, and score intact. An independent adaptation of the MIT-licensed Zork I source code, reimagined for the AI-native world."
+description: "Explore a classic text adventure through natural conversation with your AI. No parser syntax needed. Say \"go north,\" \"open the mailbox,\" or \"check my inventory\" and the game responds. Your AI can execute multiple moves at once and undo mistakes — try a sequence, undo, and try again without losing progress. Save multiple playthroughs by name and pick up across any session with your position, inventory, and score intact. An independent adaptation of the MIT-licensed Zork I source code, reimagined for the AI-native world."
 ---
 
 # Hidden Empire
 
-**Version:** 0.4.0
+**Version:** 0.4.1
 **Author:** mctx-ai
 **Homepage:** <https://github.com/mctx-ai/hidden-empire>
 
 ## What This Server Does
 
-Explore a classic text adventure through natural conversation with your AI. No parser syntax needed. Say "go north," "open the mailbox," or "check my inventory" and the game responds. Save multiple playthroughs by name and pick up across any session with your position, inventory, and score intact. An independent adaptation of the MIT-licensed Zork I source code, reimagined for the AI-native world.
+Explore a classic text adventure through natural conversation with your AI. No parser syntax needed. Say "go north," "open the mailbox," or "check my inventory" and the game responds. Your AI can execute multiple moves at once and undo mistakes — try a sequence, undo, and try again without losing progress. Save multiple playthroughs by name and pick up across any session with your position, inventory, and score intact. An independent adaptation of the MIT-licensed Zork I source code, reimagined for the AI-native world.
 
 ## Available Tools
 
@@ -33,7 +33,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://hidden-empire.mctx.ai/v0.4.0`
+**Latest version endpoint:** `https://hidden-empire.mctx.ai/v0.4.1`
 
 ## How to Install
 
@@ -100,6 +100,10 @@ You could. But nowhere else does the game live inside your AI assistant, with yo
 
 **Multiple simultaneous playthroughs** — Run separate games for different exploration strategies or share a playthrough name with a friend. Up to 20 named saves per account.
 
+**Undo any move, or an entire sequence** — Made a mistake? Walked into danger? You can undo your last move or roll back a whole chain of commands. No lost progress, no starting over from scratch — just try again.
+
+**Batch execution — your AI plays multiple moves at once** — Ask your AI to explore a path, work through a sequence of actions, or execute a plan across many moves in a single request. The game processes each command in turn and returns the full result.
+
 **Natural language input** — You do not need to know parser syntax. Say "go through the door to the north" or just "north." The game understands both.
 
 **Real-time game events** — In supported AI clients, game events arrive as they happen — room descriptions, item discoveries, score changes — without waiting for a full response cycle.
@@ -155,6 +159,13 @@ You are stuck and want to try something.
 - "Move the rug"
 - "Climb the rope"
 
+**Undoing moves**
+You made a mistake or want to try a different approach.
+- "Undo that last move"
+- "Take that back"
+- "Undo the last three moves"
+- "Go back to before I opened the trapdoor"
+
 **Managing saves**
 You want to organize your playthroughs or resume a previous one.
 - "List my saved games"
@@ -174,6 +185,11 @@ When you say "Open the mailbox," your AI executes the command and describes the 
 
 > Opening the small mailbox reveals a leaflet.
 > Score: 0 | Moves: 1
+
+When you say "Undo that last move," your AI rolls back the command and returns you to where you were:
+
+> Move undone. You are back in the Troll Room.
+> Score: 10 | Moves: 14
 
 When you say "List my saved games," your AI returns your active playthroughs:
 
