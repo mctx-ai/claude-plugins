@@ -38,7 +38,7 @@
       "name": "hidden-empire",
       "source": "./hidden-empire",
       "description": "Explore a classic text adventure through natural conversation with your AI. No parser syntax needed. Say \"go north,\" \"open the mailbox,\" or \"check my inventory\" and the game responds. Your AI can execute multiple moves at once and undo mistakes — try a sequence, undo, and try again without losing progress. Save multiple playthroughs by name and pick up across any session with your position, inventory, and score intact. An independent adaptation of the MIT-licensed Zork I source code, reimagined for the AI-native world.",
-      "version": "0.4.2"
+      "version": "0.5.0"
     },
     {
       "name": "notes",
