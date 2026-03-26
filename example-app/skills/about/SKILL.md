@@ -5,7 +5,7 @@ description: "Build complete Apps with our framework — study or fork this refe
 
 # Example App
 
-**Version:** 1.3.3
+**Version:** 1.3.4
 **Author:** mctx-ai
 **Source:** <https://github.com/mctx-ai/example-app>
 **Homepage:** <https://mctx.ai>
@@ -34,7 +34,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://example-app.mctx.ai/v1.3.3`
+**Latest version endpoint:** `https://example-app.mctx.ai/v1.3.4`
 
 ## How to Install
 
