@@ -1,17 +1,17 @@
 ---
 name: about-hidden-empire
-description: "Explore a classic text adventure through natural conversation with your AI. No parser syntax needed. Say \"go north,\" \"open the mailbox,\" or \"check my inventory\" and the game responds. Your AI can execute multiple moves at once and undo mistakes — try a sequence, undo, and try again without losing progress. Save multiple playthroughs by name and pick up across any session with your position, inventory, and score intact. An independent adaptation of the MIT-licensed Zork I source code, reimagined for the AI-native world."
+description: "Play a legendary text adventure by talking to your AI — no commands to memorize. The Hidden Empire puts a full underground world of puzzles, treasures, and trolls inside your conversation. Speak naturally: say 'head north,' 'grab the lantern,' or 'what am I carrying?' and your AI handles the rest. Execute multi-move plans in one shot, undo mistakes instantly, and save up to 20 named playthroughs you can resume from any session. Based on the MIT-licensed Zork I source, rebuilt from the ground up for AI-native play."
 ---
 
 # Hidden Empire
 
-**Version:** 0.9.5
+**Version:** 0.9.6
 **Author:** mctx-ai
 **Homepage:** <https://github.com/mctx-ai/hidden-empire>
 
 ## What This Server Does
 
-Explore a classic text adventure through natural conversation with your AI. No parser syntax needed. Say "go north," "open the mailbox," or "check my inventory" and the game responds. Your AI can execute multiple moves at once and undo mistakes — try a sequence, undo, and try again without losing progress. Save multiple playthroughs by name and pick up across any session with your position, inventory, and score intact. An independent adaptation of the MIT-licensed Zork I source code, reimagined for the AI-native world.
+Play a legendary text adventure by talking to your AI — no commands to memorize. The Hidden Empire puts a full underground world of puzzles, treasures, and trolls inside your conversation. Speak naturally: say 'head north,' 'grab the lantern,' or 'what am I carrying?' and your AI handles the rest. Execute multi-move plans in one shot, undo mistakes instantly, and save up to 20 named playthroughs you can resume from any session. Based on the MIT-licensed Zork I source, rebuilt from the ground up for AI-native play.
 
 ## Available Tools
 
@@ -33,7 +33,7 @@ After subscribing, OAuth auto-discovery handles authentication automatically via
 
 **Authentication:** OAuth auto-discovery via RFC 9728 — the client discovers the authorization server automatically. No manual token configuration needed.
 
-**Latest version endpoint:** `https://hidden-empire.mctx.ai/v0.9.5`
+**Latest version endpoint:** `https://hidden-empire.mctx.ai/v0.9.6`
 
 ## How to Install
 
@@ -82,58 +82,60 @@ mctx is a managed hosting platform for Apps for AI. Subscribe once and connect f
 
 # The Hidden Empire
 
-Play a classic text adventure through natural conversation with your AI assistant.
+A full text adventure lives inside your AI conversation. Just talk and play.
 
-Most interactive fiction requires a dedicated app, a browser tab, or a specific platform. You lose your place, lose the atmosphere, and lose the thread. The Hidden Empire puts the game directly inside your AI conversation — no separate interface, no switching contexts. You explore, solve puzzles, and collect treasure by talking to your AI the same way you already do. Your progress persists across every session, so you can pick up mid-dungeon on Monday morning exactly where you left off Friday night.
+The original Zork was brilliant but unforgiving -- cryptic parser syntax, no mercy for typos, and if you closed the window, your progress vanished. The Hidden Empire takes that same underground world of puzzles, treasures, and lurking dangers and puts it where you already are: your AI assistant. You play by talking. Your AI translates plain English into game commands, rephrases when something does not work, and keeps your full game state -- location, inventory, score -- saved and waiting whenever you come back. No manuals, no memorizing syntax, no lost progress. Just conversation and adventure.
 
 ---
 
-## Why not just play Zork somewhere else?
+## Why not just ask your AI about Zork?
 
-You could. But nowhere else does the game live inside your AI assistant, with your AI translating natural conversation into game commands, keeping full game state — your position, inventory, and score — across every session, and responding to natural language — not just exact parser commands. The Hidden Empire turns a classic into a conversational adventure.
+Your AI can tell you about Zork. It cannot play Zork with you. The Hidden Empire runs the actual game engine -- a real Z-machine interpreter executing the original game logic. Every room, puzzle, and item interaction behaves exactly as designed, with real consequences for your choices. Your AI is the translator between your words and that engine, not a summary or a simulation. When you pick up the brass lantern, it is in your inventory. When the troll blocks the passage, you have to solve it. The game is real. The conversation is just how you play it.
 
 ---
 
 ## What you get
 
-**Cross-session persistence** — Save a playthrough by name and load it anytime, from any session. Your progress never depends on keeping a browser tab open or staying in the same conversation.
+**Natural language play** -- Say "go through the door to the north" or just "north." Ask "what am I carrying?" instead of typing INVENTORY. Your AI figures out the right command and sends it. If the game rejects it, your AI rephrases and retries silently -- you just see the result.
 
-**Multiple simultaneous playthroughs** — Run separate games for different exploration strategies or share a playthrough name with a friend. Up to 20 named saves per account.
+**Auto-save after every move** -- Your game state saves automatically with each command. Close the conversation, switch devices, come back next week. You are exactly where you left off.
 
-**Undo any move, or an entire sequence** — Made a mistake? Walked into danger? You can undo your last move or roll back a whole chain of commands. No lost progress, no starting over from scratch — just try again.
+**Undo mistakes instantly** -- Walked into a dark room without your lantern? Undo your last move and try a different approach. No penalty, no reloading from a save point.
 
-**Batch execution — your AI plays multiple moves at once** — Ask your AI to explore a path, work through a sequence of actions, or execute a plan across many moves in a single request. The game processes each command in turn and returns the full result.
+**Batch commands** -- Tell your AI to execute a whole plan: "go north, take the sword, then head east." The game processes each step in order and returns the full result. Explore faster without back-and-forth.
 
-**Natural language input** — You do not need to know parser syntax. Say "go through the door to the north" or just "north." The game understands both.
+**Multiple named playthroughs** -- Run up to 20 separate games at once. Keep a cautious run and a reckless one. Compare strategies. Pick up any of them from any session.
 
-**Real-time game events** — In supported AI clients, game events arrive as they happen — room descriptions, item discoveries, score changes — without waiting for a full response cycle.
+**Structured game state on demand** -- Ask your AI where you are, what you are carrying, and what your score is. Get a clean answer drawn from the live game state, not a guess.
 
-**A complete classic adventure** — Underground mazes, locked doors, hidden treasure, devious puzzles, and a troll who really does not want you to pass. Based on the full Zork I source.
+**A complete classic adventure** -- Underground labyrinths, hidden treasure, locked doors, devious puzzles, and a troll who really does not want you to cross that bridge. Every room and secret from the original, faithfully preserved.
 
 ---
 
 ## How it works
 
-You start a game by asking your AI assistant to begin a playthrough. The game opens with a classic scene: an open field west of a white house, a small mailbox nearby. From there you navigate, examine objects, pick up items, and solve puzzles entirely through conversation. When you want to stop, your progress is automatically saved. The next time you ask your AI to load that save, you are back in exactly the same room, with the same inventory, same score, same moves.
+Ask your AI to start a game. You find yourself in an open field west of a white house, a small mailbox nearby. From there, you explore by saying what you want to do -- walk somewhere, examine something, pick up an item, try a puzzle. Your AI handles the translation. When you are done for the day, just stop. Your progress is already saved. Next time, ask to continue and you are right back where you were: same room, same inventory, same score, same moves.
+
+You never see the game engine. You never type parser commands. You just play.
 
 ---
 
 ## Usage in conversation
 
-Talk to your AI assistant the way you normally would. The game activates when you ask to start, continue, or manage a playthrough.
+Talk to your AI the way you normally would. The game responds when you ask to start, continue, or manage a playthrough.
 
-During gameplay, your AI translates natural language into the parser commands the game engine understands. You can say "head toward the forest" instead of "north," or "grab the brass lantern" instead of "take lantern" — the AI figures out the intent and issues the right command. You can also ask questions like "what's in my inventory?" or "where am I?" and get a direct answer.
+During gameplay, speak naturally. "Head toward the forest," "grab the brass lantern," "what is behind the door?" -- your AI translates your words into the commands the game engine understands. You can also ask about your current state: "where am I?" or "what is my score?"
 
-Outside gameplay, you can list your saved playthroughs, load a specific one by name, or reset a playthrough to start fresh. The AI handles the game management the same way it handles the game itself — through plain conversation.
+Between sessions, manage your saves through conversation. List your playthroughs, load one by name, or reset a game to start fresh.
 
 ---
 
 ## Example phrases
 
 **Starting a new adventure**
-You want to begin fresh — or start a named run you can return to later.
+You want to begin fresh or create a named playthrough to return to later.
 - "Start a new game of The Hidden Empire"
-- "Begin a Hidden Empire playthrough called 'first-run'"
+- "Begin a playthrough called 'deep-dive'"
 - "Let's play The Hidden Empire"
 
 **Exploring the world**
@@ -149,7 +151,7 @@ You have found something and want to interact with it.
 - "Take the lamp"
 - "Check my inventory"
 - "Read the leaflet"
-- "Put the sword in the case"
+- "Put the sword in the trophy case"
 - "Open the trapdoor"
 
 **Solving puzzles**
@@ -157,63 +159,73 @@ You are stuck and want to try something.
 - "Turn on the lamp"
 - "Try the key on the lock"
 - "Move the rug"
-- "Climb the rope"
+- "Climb down the rope"
 
-**Undoing moves**
-You made a mistake or want to try a different approach.
+**Fixing mistakes**
+Something went wrong and you want to backtrack.
 - "Undo that last move"
 - "Take that back"
 - "Undo the last three moves"
-- "Go back to before I opened the trapdoor"
+
+**Running a multi-step plan**
+You know what you want to do and want to do it all at once.
+- "Go north, take the sword, then go east"
+- "Open the trapdoor, go down, and turn on the lantern"
 
 **Managing saves**
 You want to organize your playthroughs or resume a previous one.
 - "List my saved games"
-- "Load my save called 'first-run'"
+- "Load my save called 'deep-dive'"
 - "Reset my current playthrough"
+- "How many saves do I have?"
 
 ---
 
 ## Example responses
 
-When you say "Start a new game of The Hidden Empire," your AI responds with the game's opening text and waits for your next move:
+When you say "Start a new game of The Hidden Empire," your AI responds with the opening scene:
 
 > You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.
 > Score: 0 | Moves: 0
 
-When you say "Open the mailbox," your AI executes the command and describes the result:
+When you say "Open the mailbox," the game processes the command and your AI describes the result:
 
 > Opening the small mailbox reveals a leaflet.
 > Score: 0 | Moves: 1
 
-When you say "Undo that last move," your AI rolls back the command and returns you to where you were:
+When you say "Undo that last move," the game rolls back and your AI confirms where you are:
 
 > Move undone. You are back in the Troll Room.
 > Score: 10 | Moves: 14
 
-When you say "List my saved games," your AI returns your active playthroughs:
+When you say "List my saved games," your AI shows your active playthroughs:
 
-> **weekend-run** — Score: 35 | Moves: 42 | Last played: 2 days ago
-> **first-run** — Score: 10 | Moves: 18 | Last played: 5 days ago
+> **deep-dive** -- Score: 35 | Moves: 42 | Last played: 2 days ago
+> **speed-run** -- Score: 10 | Moves: 18 | Last played: 5 days ago
 
 ---
 
 ## Real-world scenarios
 
-**The weekend exploration**
-On Saturday afternoon you start a new playthrough called "weekend-run." You explore the field, find the front door boarded shut, discover a path around back, and make it into the house before dinner interrupts. Sunday morning you ask your AI to load "weekend-run" and you are standing in the kitchen exactly where you stopped, lamp in hand, troll blocking the passage ahead.
+**The lunch break dungeon crawl**
+Tuesday at noon, you start a playthrough called "lunch-run" and make it into the house, through the trapdoor, and down into the cellar before your break ends. Wednesday, you ask your AI to load "lunch-run." You are standing in the cellar, lantern lit, sword in hand, troll blocking the way forward. You try a strategy, it does not work, you undo, try something else -- and you are past the troll before your sandwich is gone.
 
-**The returning player**
-Three weeks ago you left off deep in the dungeon with a score of 85 and no idea what to do next. You open a new session, ask your AI to list your saves, and load the one from before. Your AI loads the save, shows you the room description, and you pick up exactly where you were — inventory intact, score preserved, every item in its place.
+**The slow burn across weeks**
+You have been chipping away at The Hidden Empire for three weeks. Your score is 85, you are deep underground, and you are genuinely stuck. You open a new session, load your save, and ask your AI to describe the room and your inventory. Everything is exactly as you left it. You try "move the rug" on a hunch -- and find a hidden passage you missed the first ten times.
 
-**The parallel strategist**
-You want to try two different approaches to the underground maze. You start "maze-route-a" and explore one path until you get stuck. Then you start "maze-route-b" and try a different strategy. Both playthroughs stay active. You can switch between them to compare progress or abandon the dead end and continue with the one that worked.
+**The strategist with parallel runs**
+You hit a fork in the underground maze and want to try both paths. You start "maze-left" and explore one direction until you hit a dead end. Then you start "maze-right" and try the other way. Both saves stay active. You switch between them, compare progress, and eventually abandon the dead end to continue on the path that worked -- without ever losing a move.
 
 ---
 
 ## Legal
 
-This project is an independent adaptation based on the MIT-licensed open-source release of Zork I. It is not affiliated with or endorsed by Microsoft, Activision, or Infocom. See the [NOTICE](./NOTICE) file for attribution details.
+This project is an independent adaptation based on the MIT-licensed open-source release of Zork I, originally released by Activision/Microsoft.
+
+Copyright (c) 2025 Microsoft
+Upstream Source: https://github.com/historicalsource/zork1
+
+The Hidden Empire is not affiliated with or endorsed by Microsoft, Activision, or Infocom. Zork is a mark associated with Microsoft and Activision and is used here only for factual reference to the original source material upon which this independent adaptation is based.
 
 This project is released under the MIT License. See [LICENSE](./LICENSE) for full details.
 
