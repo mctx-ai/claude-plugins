@@ -38,7 +38,7 @@
       "name": "hidden-empire",
       "source": "./hidden-empire",
       "description": "Play a legendary text adventure by talking to your AI — no commands to memorize. The Hidden Empire puts a full underground world of puzzles, treasures, and trolls inside your conversation. Speak naturally: say 'head north,' 'grab the lantern,' or 'what am I carrying?' and your AI handles the rest. Execute multi-move plans in one shot, undo mistakes instantly, and save up to 20 named playthroughs you can resume from any session. Based on the MIT-licensed Zork I source, rebuilt from the ground up for AI-native play.",
-      "version": "0.9.6"
+      "version": "0.9.7"
     },
     {
       "name": "notes",
