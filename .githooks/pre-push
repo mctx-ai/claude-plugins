@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_root="$(git rev-parse --show-toplevel)"
+needs_build=false
+
+# Read the push info from stdin (format: <local_ref> <local_sha> <remote_ref> <remote_sha>)
+while read -r local_ref local_sha remote_ref remote_sha; do
+  # Skip deletion pushes (local_sha all-zeros means the ref is being deleted)
+  if [ "$local_sha" = "0000000000000000000000000000000000000000" ]; then
+    continue
+  fi
+
+  # If pushing a new branch or deleting a remote ref (remote_sha all-zeros), always build.
+  # Both cases mean there is no remote baseline to diff against.
+  if [ "$remote_sha" = "0000000000000000000000000000000000000000" ]; then
+    needs_build=true
+    continue
+  fi
+
+  # Check if any channel source files changed relative to the remote branch
+  changed=$(git diff --name-only "$remote_sha" "$local_sha" -- \
+    channel/src/ \
+    channel/package.json \
+    channel/package-lock.json)
+
+  if [ -n "$changed" ]; then
+    needs_build=true
+  else
+    echo "No channel changes detected, skipping build."
+  fi
+done
+
+if [ "$needs_build" = true ]; then
+  npm run build --prefix "$repo_root/channel"
+  git add "$repo_root/channel/dist/index.js" "$repo_root/channel/dist/index.js.map"
+  git commit --amend --no-edit
+
+  # BUILD SIZE GUARD: Warn if dist/index.js exceeds 1 MB
+  if [ -f "$repo_root/channel/dist/index.js" ]; then
+    size=$(wc -c < "$repo_root/channel/dist/index.js")
+    max_size=$((1024 * 1024))  # 1 MB in bytes
+    if [ "$size" -gt "$max_size" ]; then
+      echo "WARNING: channel/dist/index.js is over 1 MB — consider reviewing dependencies"
+    fi
+  fi
+fi
