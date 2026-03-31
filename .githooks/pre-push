@@ -1,47 +1,109 @@
 #!/usr/bin/env bash
+# .githooks/pre-push — Channel dist freshness guard
+#
+# SETUP (fresh clone):
+#   Run one of:
+#     npm run prepare          # if root package.json exists
+#     git config core.hooksPath .githooks
+#
+# This hook ensures channel/dist/index.js is committed and current before push.
+# It never auto-commits. If dist is stale, the push fails with instructions.
 set -euo pipefail
 
 repo_root="$(git rev-parse --show-toplevel)"
+
+# Guard: detached HEAD — nothing sensible to check against, skip.
+if ! git symbolic-ref --quiet HEAD > /dev/null 2>&1; then
+  echo "Warning: Detached HEAD — skipping channel dist check."
+  exit 0
+fi
+
 needs_build=false
+no_changes_printed=false
 
 # Read the push info from stdin (format: <local_ref> <local_sha> <remote_ref> <remote_sha>)
 while read -r local_ref local_sha remote_ref remote_sha; do
-  # Skip deletion pushes (local_sha all-zeros means the ref is being deleted)
+  # Skip deletion pushes (local_sha all-zeros means the ref is being deleted).
   if [ "$local_sha" = "0000000000000000000000000000000000000000" ]; then
     continue
   fi
 
-  # If pushing a new branch or deleting a remote ref (remote_sha all-zeros), always build.
-  # Both cases mean there is no remote baseline to diff against.
+  # New-branch push (remote_sha all-zeros): no remote baseline to diff against.
+  # Check whether dist/index.js is already current rather than always rebuilding.
   if [ "$remote_sha" = "0000000000000000000000000000000000000000" ]; then
+    # Check if the committed dist/index.js is up-to-date with what the build
+    # would produce. We do this by verifying dist/index.js is tracked and has
+    # no working-tree changes, and the source has no uncommitted edits either.
+    # If dist is clean and committed we assume it is current; if not, build.
+    if ! git ls-files --error-unmatch "$repo_root/channel/dist/index.js" > /dev/null 2>&1; then
+      # dist/index.js is not tracked at all — definitely needs build.
+      needs_build=true
+    elif ! git diff --quiet HEAD -- \
+        "$repo_root/channel/dist/index.js" \
+        "$repo_root/channel/src/" \
+        "$repo_root/channel/package.json" \
+        "$repo_root/channel/package-lock.json" 2>/dev/null; then
+      # There are uncommitted changes to sources or dist — needs build.
+      needs_build=true
+    fi
+    # Otherwise dist is committed and sources are clean; treat as current.
+    continue
+  fi
+
+  # Existing remote: diff changed source files between remote and local SHAs.
+  # If git diff fails (e.g. remote_sha is unreachable after a force-push),
+  # fall back to always rebuilding with a warning.
+  changed=""
+  if ! changed=$(git diff --name-only "$remote_sha" "$local_sha" -- \
+      channel/src/ \
+      channel/package.json \
+      channel/package-lock.json 2>/dev/null); then
+    echo "Warning: Could not diff against remote SHA $remote_sha (may be unreachable). Assuming channel sources changed."
     needs_build=true
     continue
   fi
 
-  # Check if any channel source files changed relative to the remote branch
-  changed=$(git diff --name-only "$remote_sha" "$local_sha" -- \
-    channel/src/ \
-    channel/package.json \
-    channel/package-lock.json)
-
   if [ -n "$changed" ]; then
     needs_build=true
   else
-    echo "No channel changes detected, skipping build."
+    if [ "$no_changes_printed" = false ]; then
+      echo "No channel changes detected, skipping build."
+      no_changes_printed=true
+    fi
   fi
 done
 
-if [ "$needs_build" = true ]; then
-  npm run build --prefix "$repo_root/channel"
-  git add "$repo_root/channel/dist/index.js" "$repo_root/channel/dist/index.js.map"
-  git commit --amend --no-edit
+if [ "$needs_build" = false ]; then
+  exit 0
+fi
 
-  # BUILD SIZE GUARD: Warn if dist/index.js exceeds 1 MB
-  if [ -f "$repo_root/channel/dist/index.js" ]; then
-    size=$(wc -c < "$repo_root/channel/dist/index.js")
-    max_size=$((1024 * 1024))  # 1 MB in bytes
-    if [ "$size" -gt "$max_size" ]; then
-      echo "WARNING: channel/dist/index.js is over 1 MB — consider reviewing dependencies"
-    fi
+# Install dependencies if node_modules is missing (deterministic, no lifecycle scripts).
+if [ ! -d "$repo_root/channel/node_modules" ]; then
+  echo "node_modules not found, running npm ci --ignore-scripts..."
+  npm ci --ignore-scripts --prefix "$repo_root/channel"
+fi
+
+npm run build --prefix "$repo_root/channel"
+
+# Check whether dist/index.js changed as a result of the build.
+# If it did, the committed version was stale — fail the push with instructions.
+if ! git diff --exit-code "$repo_root/channel/dist/index.js" > /dev/null 2>&1; then
+  echo ""
+  echo "ERROR: dist/index.js is stale."
+  echo ""
+  echo "  Run the following, then push again:"
+  echo "    npm run build --prefix channel"
+  echo "    git add channel/dist/index.js"
+  echo "    git commit -m 'chore(channel): rebuild dist/index.js'"
+  echo ""
+  exit 1
+fi
+
+# BUILD SIZE GUARD: Warn if dist/index.js exceeds 1 MB.
+if [ -f "$repo_root/channel/dist/index.js" ]; then
+  size=$(wc -c < "$repo_root/channel/dist/index.js")
+  max_size=$((1024 * 1024))  # 1 MB in bytes
+  if [ "$size" -gt "$max_size" ]; then
+    echo "WARNING: channel/dist/index.js is over 1 MB — consider reviewing dependencies"
   fi
 fi
