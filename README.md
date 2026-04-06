@@ -90,5 +90,5 @@ If you host an MCP server on mctx, enabling Claude Code publishing in your [serv
 ---
 
 <div align="center">
-<sub>Powered by <a href="https://mctx.ai">mctx</a> — Apps for AI. Hosted. Distributed. Monetized.</sub>
+<sub>Powered by <a href="https://mctx.ai">mctx</a> — Apps for AI. Hosted. Discovered. Monetized.</sub>
 </div>
