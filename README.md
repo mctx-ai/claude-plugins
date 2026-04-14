@@ -83,12 +83,12 @@ Requires Claude Code v2.1.80+ and an mctx account with active subscriptions to c
 <details>
 <summary>For developers</summary>
 
-If you host an MCP server on mctx, enabling Claude Code publishing in your [server dashboard](https://app.mctx.ai/dev/servers) automatically lists it in this marketplace. No extra steps required.
+Free to host — 1,000 requests/month included per server, no payment setup required. Auto-published to the Claude Code marketplace and MCP Community Registry on every deploy. Enable monetization when you're ready.
 
 </details>
 
 ---
 
 <div align="center">
-<sub>Powered by <a href="https://mctx.ai">mctx</a> — Apps for AI. Hosted. Distributed. Monetized.</sub>
+<sub>Powered by <a href="https://mctx.ai">mctx</a> — Apps for AI. Hosted. Distributed. Production-ready.</sub>
 </div>
