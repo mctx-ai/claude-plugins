@@ -76,7 +76,7 @@ Connect to `https://help.mctx.ai` using HTTP transport. OAuth auto-discovery via
 
 ## About mctx
 
-mctx is a managed hosting platform for Apps for AI. Subscribe once and connect from any AI client — Claude, ChatGPT, Cursor, VS Code, and more.
+mctx — The best way to Build an MCP server. Subscribe once and connect from any AI client — Claude, ChatGPT, Cursor, VS Code, and more.
 
 ## Usage Notes
 
