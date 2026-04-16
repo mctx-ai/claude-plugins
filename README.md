@@ -90,5 +90,5 @@ Free to host — 1,000 requests/month included per server, no payment setup requ
 ---
 
 <div align="center">
-<sub>Powered by <a href="https://mctx.ai">mctx</a> — The best way to Build an MCP server.</sub>
+<sub>Powered by <a href="https://mctx.ai">mctx</a> — The best way to Build an MCP Server.</sub>
 </div>
