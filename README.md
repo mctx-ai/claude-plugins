@@ -14,7 +14,7 @@
 
 ## Get Started
 
-Add the mctx marketplace to Claude Code, then install any AI App in seconds.
+Add the mctx marketplace to Claude Code, then install any mctx MCP server in seconds.
 
 **Step 1 — Add the marketplace**
 
@@ -22,29 +22,29 @@ Add the mctx marketplace to Claude Code, then install any AI App in seconds.
 /plugin marketplace add https://mctx.ai/marketplace.json
 ```
 
-**Step 2 — Install an AI App**
+**Step 2 — Install an MCP server**
 
 ```
 /plugin install {slug}@mctx
 ```
 
-Replace `{slug}` with the name of the AI App you want to use.
+Replace `{slug}` with the name of the MCP server you want to use.
 
 ---
 
 ## What you get
 
-When you install an mctx AI App:
+When you install an mctx MCP server:
 
 - **Instant connection** — Claude Code is automatically configured to connect to the server. No manual setup.
-- **Documentation built in** — A skill is added to your Claude Code session so Claude knows exactly what the AI App can do and how to use it.
+- **Documentation built in** — A skill is added to your Claude Code session so Claude knows exactly what the MCP server can do and how to use it.
 - **Subscribe once, connect anywhere** — Your subscription works across all your devices and Claude Code sessions.
 
 ---
 
-## Browse available AI Apps
+## Browse available MCP servers
 
-Visit **[mctx.ai](https://mctx.ai)** to learn more about the platform and subscribe to AI Apps.
+Visit **[mctx.ai](https://mctx.ai)** to learn more about the platform and subscribe to MCP servers.
 
 Need help? The [docs](https://docs.mctx.ai) cover everything from installation to managing your subscriptions.
 
