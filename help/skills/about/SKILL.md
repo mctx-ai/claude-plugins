@@ -1,6 +1,6 @@
 ---
 name: about-help
-description: "Get accurate answers about mctx and MCP servers from live docs, not outdated training data. Look up deployment steps, payouts, pricing, or framework questions instantly. Works with Claude Code, Cursor, Codex, and any MCP client. Coverage: server framework, deployment, environment variables, subscriptions, payouts, pricing, tools, resources, transports, authentication, versioning. Questions you can ask: \"How do I define a tool with input validation?\" \"What does mctx need in package.json?\" \"How do I set up payouts?\" \"What's the difference between ready and live status?\" \"How does the 80/20 split work?\" \"Why did my deployment fail?\" \"What MCP resources and tools are available?\""
+description: "Get accurate answers about mctx and MCP servers from live docs, not outdated training data. Look up deployment steps, hosting fees, pricing, or framework questions instantly. Works with Claude Code, Cursor, Codex, and any MCP client. Coverage: server framework, deployment, environment variables, subscriptions, hosting fees, pricing, tools, resources, transports, authentication, versioning. Questions you can ask: \"How do I define a tool with input validation?\" \"What does mctx need in package.json?\" \"How does hosting pricing work?\" \"What's the difference between ready and live status?\" \"How do I enable monetization for my server?\" \"Why did my deployment fail?\" \"What MCP resources and tools are available?\""
 ---
 
 # Help
@@ -11,7 +11,7 @@ description: "Get accurate answers about mctx and MCP servers from live docs, no
 
 ## What This Server Does
 
-Get accurate answers about mctx and MCP servers from live docs, not outdated training data. Look up deployment steps, payouts, pricing, or framework questions instantly. Works with Claude Code, Cursor, Codex, and any MCP client. Coverage: server framework, deployment, environment variables, subscriptions, payouts, pricing, tools, resources, transports, authentication, versioning. Questions you can ask: "How do I define a tool with input validation?" "What does mctx need in package.json?" "How do I set up payouts?" "What's the difference between ready and live status?" "How does the 80/20 split work?" "Why did my deployment fail?" "What MCP resources and tools are available?"
+Get accurate answers about mctx and MCP servers from live docs, not outdated training data. Look up deployment steps, hosting fees, pricing, or framework questions instantly. Works with Claude Code, Cursor, Codex, and any MCP client. Coverage: server framework, deployment, environment variables, subscriptions, hosting fees, pricing, tools, resources, transports, authentication, versioning. Questions you can ask: "How do I define a tool with input validation?" "What does mctx need in package.json?" "How does hosting pricing work?" "What's the difference between ready and live status?" "How do I enable monetization for my server?" "Why did my deployment fail?" "What MCP resources and tools are available?"
 
 ## Available Tools
 
@@ -76,7 +76,7 @@ Connect to `https://help.mctx.ai` using HTTP transport. OAuth auto-discovery via
 
 ## About mctx
 
-mctx is a managed hosting platform for Apps for AI. Subscribe once and connect from any AI client — Claude, ChatGPT, Cursor, VS Code, and more.
+mctx — The best way to Build an MCP Server. Subscribe once and connect from any AI client — Claude, ChatGPT, Cursor, VS Code, and more.
 
 ## Usage Notes
 
@@ -94,7 +94,7 @@ Unlike asking your AI directly, this server doesn't rely on what the model happe
 
 **Guided walkthroughs** — Ask where to start and the server walks you through the process step by step, one step at a time, with source links you can follow to the full documentation.
 
-**mctx-specific answers** — Deployment lifecycle, the `@mctx-ai/app` TypeScript framework, environment variables, payouts, subscriptions, pricing — the full platform, fully searchable from your AI conversation.
+**mctx-specific answers** — Deployment lifecycle, the `@mctx-ai/app` TypeScript framework, environment variables, hosting fees, subscriptions, pricing — the full platform, fully searchable from your AI conversation.
 
 ## How it works
 
@@ -140,13 +140,13 @@ You're configuring how your server handles identity and subscriptions, or trying
 - "How do subscriptions work for my subscribers?"
 - "What is the dispatch worker and what does it do?"
 
-**Payouts and pricing**
-You're setting up or reviewing your revenue configuration and want to understand exactly how money flows.
+**Hosting fees and monetization**
+You want to understand how mctx hosting fees work, or you're exploring whether to enable paid subscriptions for your server.
 
-- "How do I set up payouts?"
-- "How do I set a price for my server?"
-- "How does the revenue split work?"
-- "What happens if I make my server free?"
+- "How does mctx hosting pricing work?"
+- "What is the free tier for hosted servers?"
+- "How do I enable monetization for my server?"
+- "What happens if I keep my server free?"
 
 ## Example responses
 
@@ -156,11 +156,11 @@ You're setting up or reviewing your revenue configuration and want to understand
 
 **"What's the difference between ready and live status?"**
 
-> A server in `ready` status has been added to mctx but hasn't been deployed yet — or it requires payout setup before it can go live. A server in `live` status has at least one successfully deployed version and is accessible to subscribers. If your server is stuck in `ready`, check whether payout setup is complete in your developer settings. See: docs.mctx.ai/quick-start/set-up-payouts
+> A server in `ready` status has been added to mctx but hasn't been deployed yet. A server in `live` status has at least one successfully deployed version and is accessible to subscribers. See: docs.mctx.ai/quick-start/deploy
 
-**"How does the revenue split work?"**
+**"How does mctx hosting pricing work?"**
 
-> mctx takes 20% of subscription revenue and passes 80% to you. There are no monthly hosting fees — mctx earns only when you earn. Payouts are transferred automatically on a recurring schedule once your payout account is connected. The 20% covers hosting, authentication, the subscriber billing system, and the infrastructure that routes requests to your server. See: docs.mctx.ai/pricing-payouts/getting-paid
+> Hosting on mctx is free for the first 1,000 requests per server per month. Above that, usage fees apply on a graduated scale: $1.00 per 1,000 requests for usage between 1,001 and 10,000; $0.85 per 1,000 for usage between 10,001 and 100,000; and $0.80 per 1,000 above 100,000. Your first month over the free tier threshold is a grace month — no charge. If you choose to monetize your server with paid subscriptions, you keep 100% of subscriber revenue. mctx charges no platform fee on your subscription income. See: docs.mctx.ai/pricing/hosting-fees
 
 ## How subscribers use it
 
