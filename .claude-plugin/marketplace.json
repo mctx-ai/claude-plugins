@@ -11,12 +11,6 @@
       "version": "1.11.3"
     },
     {
-      "name": "channel",
-      "source": "./channel",
-      "description": "Real-time event bridge for mctx-hosted MCP servers. Pushes server events into your Claude Code session as channel notifications — CI alerts, game events, monitoring data, and anything your server emits via server.emit(). Requires an mctx account and active subscriptions.",
-      "version": "0.1.0"
-    },
-    {
       "name": "example-app",
       "source": "./example-app",
       "description": "Build complete Apps with our framework — study or fork this reference implementation. Covers all @mctx-ai/app patterns: tool types (sync string, object return, generators, LLM sampling), resource URIs (static, dynamic templates), prompt formats (single-message, multi-message), tool annotations (readOnly, destructive, openWorld, idempotent), structured logging, environment variables, and test coverage. The whoami tool demonstrates user identity via ctx.userId. Includes setup.sh for quick template generation.",
